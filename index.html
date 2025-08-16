@@ -4,40 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MaxPro</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./style/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./style/main.min.css" />
   </head>
 
   <body>
-
-    <header>
-
-      <section>
-        <p>Let’s talk about your renovation project — call us today  <a href="tel:+19518070058">+19518070058</a></p>
+    <header class="header">
+      <section class="bar">
+        <div class="conteiner">
+          <p class="bar__text">
+            Let’s talk about your renovation project — call us today <br class="bar__br">
+            <a class="bar__link" href="tel:+19518070058">+1 (951) 807-00-58</a>
+          </p>
+        </div>
       </section>
 
-      <section>
-         <svg>
-    <use></use>
-  </svg>
-  <nav>
-    <ul>
-      <li><a href=""> </a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </ul>
-  </nav>
-  <button></button>
+      <section class="nav">
+        <div class="conteiner">
+          <svg class="nav__logo">
+            <use href="./image/symbol-defs.svg#icon-logo"></use>
+          </svg>
+          <button class="nav__menu">
+          <svg class="nav__burger">
+            <use href="./image/symbol-defs.svg#icon-burger"></use>
+          </svg>
+          </button>
+          <nav>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">Our services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Our works</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">About Us</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="nav__btn">Contact Us</button>
+        </div>
       </section>
-      
     </header>
-    
-  <!--  -->
 
+    <!--  -->
   </body>
 </html>

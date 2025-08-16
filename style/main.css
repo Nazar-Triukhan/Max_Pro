@@ -41,4 +41,65 @@ img {
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+
+h1, h2, h3 {
+  font-family: "Urbanist", sans-serif;
+}
+
+p, a {
+  font-family: "Inter", sans-serif;
+}
+
+.bar {
+  padding: 15px 0;
+  background: var(--buttons-active, #000);
+}
+.bar__text {
+  color: var(--text-white, #fff);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .bar__text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bar__br {
+    display: none;
+  }
+}
+.bar__link {
+  color: var(--text-white, #fff);
+}
+
+.nav {
+  padding: 20px 0;
+}
+.nav__logo {
+  width: 120px;
+  height: 34px;
+}
+.nav__menu {
+  background: none;
+  border: none;
+}
+.nav__burger {
+  width: 24px;
+  height: 24px;
+}
+.nav__list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: block;
+  }
+}
+.nav__btn {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

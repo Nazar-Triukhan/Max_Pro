@@ -1,0 +1,24 @@
+.bar {
+  padding: 15px 0;
+  background: var(--buttons-active, #000);
+
+  &__text {
+    color: var(--text-white, #fff);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 100%;
+    @media screen and (min-width: 768px){
+  font-size: 16px;
+}
+  }
+  &__br{
+    @media screen and (min-width: 768px){
+  display: none;
+}
+  }
+  &__link {
+    color: var(--text-white, #fff);
+  }
+}

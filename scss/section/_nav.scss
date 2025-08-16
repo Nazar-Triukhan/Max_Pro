@@ -1,0 +1,30 @@
+.nav {
+  padding: 20px 0;
+
+  &__box{
+  }
+
+  &__logo {
+    width: 120px;
+    height: 34px;
+  }
+  &__menu {
+    background: none;
+    border: none;
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__list{
+    display: none;
+    @media screen and (min-width: 768px){
+  display: block;
+}
+  }
+  &__btn{
+    display: none;
+}
+}
