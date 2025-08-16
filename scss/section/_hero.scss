@@ -1,0 +1,57 @@
+.hero {
+  &__box {
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 40px 50px 86px 20px;
+  }
+
+  &__title {
+    color: var(--text-white, #fff);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+      width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 661px;
+      font-size: 40px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 707px;
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    color: var(--text-white, #fff);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    margin-top: 10px;
+    @media screen and (min-width: 480px) {
+      width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 661px;
+      font-size: 18px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 707px;
+    }
+  }
+
+  &__btn {
+    color: var(--text-white, #fff);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: var(--buttons-pointing, #f27d08);
+    border: none;
+  }
+}

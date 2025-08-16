@@ -149,6 +149,7 @@ p, a {
   width: 100%;
   left: 0;
   bottom: 0;
+  padding-bottom: 20px;
   background-color: white;
   transform: translateY(-100%);
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -176,11 +177,82 @@ p, a {
   pointer-events: none;
 }
 .mobile:not(.is-hidden) {
-  transform: translateY(120px);
+  transform: translateY(140px);
   opacity: 1;
   pointer-events: auto;
 }
 
 .no-scroll {
   overflow: hidden;
+}
+
+.hero__box {
+  background-color: aquamarine;
+  border-radius: 20px;
+  padding: 40px 50px 86px 20px;
+}
+.hero__title {
+  color: var(--text-white, #fff);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 661px;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 707px;
+    font-size: 60px;
+  }
+}
+.hero__text {
+  color: var(--text-white, #fff);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  margin-top: 10px;
+}
+@media screen and (min-width: 480px) {
+  .hero__text {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    width: 661px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    width: 707px;
+  }
+}
+.hero__btn {
+  color: var(--text-white, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background: var(--buttons-pointing, #f27d08);
+  border: none;
+}
+
+.servisec__logo {
+  width: 36.911px;
+  height: 42.715px;
+  transform: rotate(-96.868deg);
 }/*# sourceMappingURL=main.css.map */

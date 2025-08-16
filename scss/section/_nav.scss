@@ -69,6 +69,7 @@ line-height: normal;
   width: 100%;
   left: 0;
   bottom: 0;
+  padding-bottom: 20px;
   background-color: white;
   transform: translateY(-100%); 
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -101,7 +102,7 @@ line-height: normal;
   }
 
   &:not(.is-hidden) {
-    transform: translateY(120px);
+    transform: translateY(140px);
     opacity: 1;
     pointer-events: auto;
   }
