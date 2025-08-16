@@ -20,5 +20,6 @@
   }
   &__link {
     color: var(--text-white, #fff);
+      text-decoration: underline;
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MaxPro</title>
+    <link rel="icon" href="./image/symbol-defs.svg#icon-logo" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,34 +43,56 @@
         </div>
       </section>
 
-      <section class="nav">
-        <div class="conteiner">
-          <svg class="nav__logo">
-            <use href="./image/symbol-defs.svg#icon-logo"></use>
-          </svg>
-          <button class="nav__menu">
-          <svg class="nav__burger">
-            <use href="./image/symbol-defs.svg#icon-burger"></use>
-          </svg>
-          </button>
-          <nav>
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="">Our services</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="">Our works</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="">About Us</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="nav__btn">Contact Us</button>
-        </div>
-      </section>
+<section class="nav">
+  <div class="conteiner nav__box">
+    <svg class="nav__logo">
+      <use href="./image/symbol-defs.svg#icon-logo"></use>
+    </svg>
+
+    <button class="nav__menu" data-mobile-toggle>
+      <svg class="nav__burger">
+        <use href="./image/symbol-defs.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <nav>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="">Our services</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">Our works</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">About Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="nav__btn">Contact Us</button>
+
+    <div class="mobile is-hidden" data-mobile>
+      <div class="conteiner">
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a class="mobile__link" href="">Our services</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link" href="">Our works</a>
+          </li>
+          <li class="mobile__item">
+            <a class="mobile__link" href="">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     </header>
 
     <!--  -->
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
