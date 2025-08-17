@@ -1,8 +1,132 @@
-.servisec{
-    &__logo{
-width: 36.911px;
-height: 42.715px;
-transform: rotate(-96.868deg);
+.services {
+  padding-top: 50px;
 
-    }
+  &__box {
+    position: relative;
+  }
+
+  &__title {
+    color: $text-main;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__text {
+    color: $text-secondary;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+
+  &__left {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+  }
+
+  &__right {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  &__wrap {
+    border-radius: 20px;
+    background: $secondary-accent;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__image {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: $sections-background;
+  }
+
+  &__heading {
+    color: $sections-background;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 11px;
+  }
+
+  &__desc{
+    color: $sections-background;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 10px;
+  }
+
+  &__secondary{
+        color: $sections-background;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 11px;
+    text-align: center;
+  }
+
+  &__description{
+        color: $sections-background;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  &__button{
+    color: $sections-background;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.2;
+border-radius: 10px;
+background: $buttons-active;
+padding: 15px 30px;
+border: none;
+margin-top: 30px;
+  }
+
+  &__one{
+    position: absolute;
+    top: 480px;
+    right: 80px;
+  }
+
+  &__tuo{
+    position: absolute;
+    top: 970px;
+    right: 80px;
+  }
+
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img{
+    width: 160px;
+    padding: 5px;
+    border-radius: 10px;
+background: var(--Sections-background, #FFF);
+  }
 }
