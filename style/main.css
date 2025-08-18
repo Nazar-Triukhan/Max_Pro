@@ -186,9 +186,28 @@ p, a {
 }
 
 .hero__box {
-  background-color: aquamarine;
+  background: url(../image/mobile/hero_mobile.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 20px;
   padding: 40px 50px 86px 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero__box {
+    background: url(../image/tablet/hero_tablet.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__box {
+    background: url(../image/desktop/hero_destop.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .hero__title {
   color: var(--text-white, #fff);
@@ -208,7 +227,7 @@ p, a {
     font-size: 40px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     width: 707px;
     font-size: 60px;
@@ -233,7 +252,7 @@ p, a {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__text {
     width: 707px;
   }
@@ -303,6 +322,13 @@ p, a {
     width: 37px;
   }
 }
+@media screen and (min-width: 768px) {
+  .services__left {
+    display: none;
+    width: 50px;
+    left: 180px;
+  }
+}
 .services__right {
   position: absolute;
   top: 16px;
@@ -312,6 +338,21 @@ p, a {
 @media screen and (min-width: 420px) {
   .services__right {
     width: 37px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services__right {
+    display: none;
+    width: 50px;
+    right: 180px;
+  }
+}
+.services__dont {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .services__dont {
+    display: block;
   }
 }
 .services__wrap {
@@ -325,12 +366,35 @@ p, a {
   flex-direction: column;
   gap: 20px;
 }
+@media screen and (min-width: 768px) {
+  .services__list {
+    gap: 50px;
+  }
+}
+.services__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .services__item:nth-child(odd) .services__flex {
+    flex-direction: row-reverse;
+  }
+  .services__item:nth-child(even) .services__flex {
+    flex-direction: row;
+  }
+}
 .services__image {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   border-radius: 10px;
   background: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .services__image {
+    width: 648px;
+  }
 }
 .services__heading {
   color: #FFFFFF;
@@ -339,12 +403,36 @@ p, a {
   line-height: 1.2;
   margin-top: 11px;
 }
+@media screen and (min-width: 768px) {
+  .services__heading {
+    width: 332px;
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__heading {
+    font-size: 40px;
+    width: 541px;
+  }
+}
 .services__desc {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
   margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .services__desc {
+    width: 332px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__desc {
+    width: 517px;
+  }
 }
 .services__secondary {
   color: #FFFFFF;
@@ -353,6 +441,7 @@ p, a {
   line-height: 1.2;
   margin-top: 11px;
   text-align: center;
+  margin-top: 50px;
 }
 .services__description {
   color: #FFFFFF;
@@ -399,8 +488,22 @@ p, a {
     margin-left: 70px;
   }
 }
+@media screen and (min-width: 768px) {
+  .services__one {
+    margin-left: auto;
+    transform: rotate(340deg);
+  }
+}
 .services__tuo {
   margin-left: auto;
+}
+.services__none {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .services__none {
+    display: none;
+  }
 }
 .services__items {
   display: flex;
@@ -410,6 +513,12 @@ p, a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .services__items {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
 .services__img {
   width: 120px;
   padding: 5px;
@@ -418,11 +527,21 @@ p, a {
 }
 @media screen and (min-width: 350px) {
   .services__img {
-    width: 140px;
+    width: 130px;
   }
 }
 @media screen and (min-width: 420px) {
   .services__img {
     width: 160px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services__img {
+    width: 317px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__img {
+    width: 295px;
   }
 }/*# sourceMappingURL=main.css.map */

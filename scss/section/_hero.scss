@@ -1,6 +1,25 @@
 .hero {
   &__box {
-    background-color: aquamarine;
+background:
+    url(../image/mobile/hero_mobile.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+@media screen and (min-width: 768px){
+background:
+    url(../image/tablet/hero_tablet.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1200px){
+background:
+    url(../image/desktop/hero_destop.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
     border-radius: 20px;
     padding: 40px 50px 86px 20px;
   }
@@ -18,7 +37,7 @@
       width: 661px;
       font-size: 40px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       width: 707px;
       font-size: 60px;
     }
@@ -38,7 +57,7 @@
       width: 661px;
       font-size: 18px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       width: 707px;
     }
   }

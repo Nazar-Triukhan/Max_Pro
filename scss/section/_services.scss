@@ -43,6 +43,11 @@
     @media screen and (min-width: 420px) {
       width: 37px;
     }
+        @media screen and (min-width: 768px){
+  display: none;
+  width: 50px;
+  left: 180px;
+}
   }
 
   &__right {
@@ -53,6 +58,18 @@
     @media screen and (min-width: 420px) {
       width: 37px;
     }
+        @media screen and (min-width: 768px){
+  display: none;
+    width: 50px;
+  right: 180px;
+}
+  }
+
+  &__dont{
+    display: none;
+    @media screen and (min-width: 768px){
+  display: block;
+}
   }
 
   &__wrap {
@@ -66,6 +83,35 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+        @media screen and (min-width: 768px){
+  gap: 50px;
+}
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      &:nth-child(odd) {
+        .services__flex {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &:nth-child(even) {
+        .services__flex {
+          flex-direction: row;
+        }
+      }
+    }
   }
 
   &__image {
@@ -74,6 +120,9 @@
     padding: 10px;
     border-radius: 10px;
     background: $sections-background;
+    @media screen and (min-width: 1200px){
+  width: 648px;
+}
   }
 
   &__heading {
@@ -82,6 +131,15 @@
     font-weight: 700;
     line-height: 1.2;
     margin-top: 11px;
+    @media screen and (min-width: 768px){
+  width: 332px;
+  font-size: 30px;
+  margin-top: 0;
+}
+@media screen and (min-width: 1200px){
+  font-size: 40px;
+  width: 541px;
+}
   }
 
   &__desc {
@@ -90,6 +148,14 @@
     font-weight: 400;
     line-height: 1.2;
     margin-top: 10px;
+        @media screen and (min-width: 768px){
+  width: 332px;
+  font-size: 16px;
+}
+@media screen and (min-width: 1200px){
+  width: 517px;
+
+}
   }
 
   &__secondary {
@@ -99,6 +165,7 @@
     line-height: 1.2;
     margin-top: 11px;
     text-align: center;
+    margin-top: 50px;
   }
 
   &__description {
@@ -143,6 +210,10 @@
     @media screen and (min-width: 420px) {
       margin-left: 70px;
     }
+        @media screen and (min-width: 768px){
+  margin-left: auto;
+  transform: rotate(340deg);
+}
   }
 
   &__tuo {
@@ -152,6 +223,13 @@
     margin-left: auto;
   }
 
+  &__none{
+    display: block;
+    @media screen and (min-width: 768px){
+  display: none;
+}
+  }
+
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +237,10 @@
     margin-top: 20px;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 1200px){
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
   }
 
   &__img {
@@ -167,10 +249,16 @@
     border-radius: 10px;
     background: var(--Sections-background, #fff);
         @media screen and (min-width: 350px) {
-    width: 140px;
+    width: 130px;
     }
     @media screen and (min-width: 420px) {
     width: 160px;
     }
+    @media screen and (min-width: 768px){
+  width: 317px;
+}
+@media screen and (min-width: 1200px){
+  width: 295px;
+}
   }
 }
