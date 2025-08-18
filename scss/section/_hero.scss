@@ -1,9 +1,9 @@
 .hero {
   &__box {
   background:
-    url('/image/desktop/hero_destop.webp'),
-    url('/image/desktop/repair.webp'),
-    url('/image/desktop/one.webp');
+    url('./image/desktop/hero_destop.webp'),
+    url('./image/desktop/repair.webp'),
+    url('./image/desktop/one.webp');
   background-size: cover, cover, cover;
   background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
