@@ -1,3 +1,4 @@
+// ===== Слайдер с предзагрузкой =====
 const hero = document.querySelector('.hero__box');
 
 const slides = [
@@ -8,15 +9,22 @@ const slides = [
 
 let index = 0;
 
+// Предзагрузка изображений
+slides.forEach(slide => {
+  const img = new Image();
+  img.src = slide.src;
+});
+
+// Установка фона
 function setBackground(slide) {
   hero.style.backgroundImage = `url('${slide.src}')`;
-  hero.style.backgroundSize = "cover";
   hero.style.backgroundPosition = slide.position;
-  hero.style.backgroundRepeat = "no-repeat";
 }
 
+// Инициализация первого слайда
 setBackground(slides[index]);
 
+// Смена слайдов
 setInterval(() => {
   index = (index + 1) % slides.length;
   setBackground(slides[index]);
