@@ -186,28 +186,12 @@ p, a {
 }
 
 .hero__box {
-  background: url(../image/mobile/hero_mobile.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../image/desktop/hero_destop.webp"), url("../image/desktop/repair.webp"), url("../image/desktop/one.webp");
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   border-radius: 20px;
   padding: 40px 50px 86px 20px;
-}
-@media screen and (min-width: 768px) {
-  .hero__box {
-    background: url(../image/tablet/hero_tablet.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__box {
-    background: url(../image/desktop/hero_destop.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 .hero__title {
   color: var(--text-white, #fff);
