@@ -259,28 +259,60 @@ p, a {
 .services__title {
   color: #333333;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
+}
+@media screen and (min-width: 350px) {
+  .services__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .services__title {
+    font-size: 20px;
+  }
 }
 .services__text {
   color: #7D7D7D;
   display: block;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.2;
   margin-top: 5px;
+}
+@media screen and (min-width: 350px) {
+  .services__text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .services__text {
+    font-size: 14px;
+  }
 }
 .services__left {
   position: absolute;
   top: 13px;
   left: 15px;
+  width: 30px;
+}
+@media screen and (min-width: 420px) {
+  .services__left {
+    width: 37px;
+  }
 }
 .services__right {
   position: absolute;
-  top: 15px;
+  top: 16px;
   right: 15px;
+  width: 33px;
+}
+@media screen and (min-width: 420px) {
+  .services__right {
+    width: 37px;
+  }
 }
 .services__wrap {
   border-radius: 20px;
@@ -332,7 +364,7 @@ p, a {
 }
 .services__button {
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
   border-radius: 10px;
@@ -341,15 +373,34 @@ p, a {
   border: none;
   margin-top: 30px;
 }
+@media screen and (min-width: 350px) {
+  .services__button {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .services__button {
+    font-size: 16px;
+  }
+}
+.services__wraper {
+  display: flex;
+}
 .services__one {
-  position: absolute;
-  top: 480px;
-  right: 80px;
+  margin-left: auto;
+}
+@media screen and (min-width: 350px) {
+  .services__one {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .services__one {
+    margin-left: 70px;
+  }
 }
 .services__tuo {
-  position: absolute;
-  top: 970px;
-  right: 80px;
+  margin-left: auto;
 }
 .services__items {
   display: flex;
@@ -360,8 +411,18 @@ p, a {
   align-items: center;
 }
 .services__img {
-  width: 160px;
+  width: 120px;
   padding: 5px;
   border-radius: 10px;
-  background: var(--Sections-background, #FFF);
+  background: var(--Sections-background, #fff);
+}
+@media screen and (min-width: 350px) {
+  .services__img {
+    width: 140px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .services__img {
+    width: 160px;
+  }
 }/*# sourceMappingURL=main.css.map */
