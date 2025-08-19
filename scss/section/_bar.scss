@@ -1,6 +1,6 @@
 .bar {
   padding: 15px 0;
-  background: var(--buttons-active, #000);
+  background: $buttons-active;
 
   &__text {
     color: var(--text-white, #fff);

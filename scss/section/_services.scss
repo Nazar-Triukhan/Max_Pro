@@ -17,6 +17,9 @@
     @media screen and (min-width: 420px) {
       font-size: 20px;
     }
+    @media screen and (min-width: 768px){
+  font-size: 30px;
+}
   }
 
   &__text {
@@ -33,6 +36,9 @@
     @media screen and (min-width: 420px) {
       font-size: 14px;
     }
+        @media screen and (min-width: 768px){
+  font-size: 18px;
+}
   }
 
   &__left {
@@ -46,7 +52,7 @@
         @media screen and (min-width: 768px){
   display: none;
   width: 50px;
-  left: 180px;
+  left: 100px;
 }
   }
 
@@ -61,7 +67,7 @@
         @media screen and (min-width: 768px){
   display: none;
     width: 50px;
-  right: 180px;
+  right: 100px;
 }
   }
 
@@ -77,6 +83,10 @@
     background: $secondary-accent;
     margin-top: 30px;
     padding: 20px;
+    @media screen and (min-width: 1200px){
+  padding: 40px;
+}
+
   }
 
   &__list {
@@ -119,7 +129,14 @@
     margin-right: auto;
     padding: 10px;
     border-radius: 10px;
+    width: 240px;
     background: $sections-background;
+        @media screen and (min-width: 350px) {
+     width: 265px;
+    }
+    @media screen and (min-width: 420px){
+  width: 330px;
+}
     @media screen and (min-width: 1200px){
   width: 648px;
 }
@@ -166,6 +183,18 @@
     margin-top: 11px;
     text-align: center;
     margin-top: 50px;
+    @media screen and (min-width: 768px){
+  width: 390px;
+  font-size: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px){
+  font-size: 40px;
+  width: 518px;
+}
+
   }
 
   &__description {
@@ -175,6 +204,10 @@
     line-height: 1.2;
     margin-top: 10px;
     text-align: center;
+        @media screen and (min-width: 768px){
+  font-size: 18px;
+}
+
   }
 
   &__button {
@@ -240,11 +273,12 @@
     @media screen and (min-width: 1200px){
   flex-direction: row;
   flex-wrap: nowrap;
+  gap: 20px;
 }
   }
 
   &__img {
-    width: 120px;
+    width: 110px;
     padding: 5px;
     border-radius: 10px;
     background: var(--Sections-background, #fff);
@@ -258,7 +292,7 @@
   width: 317px;
 }
 @media screen and (min-width: 1200px){
-  width: 295px;
+  width: 255px;
 }
   }
 }

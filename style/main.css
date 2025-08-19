@@ -2,9 +2,8 @@
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid red;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media screen and (min-width: 420px) {
   .conteiner {
@@ -54,9 +53,14 @@ p, a {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .bar {
   padding: 15px 0;
-  background: var(--buttons-active, #000);
+  background: #000000;
 }
 .bar__text {
   color: var(--text-white, #fff);
@@ -145,6 +149,7 @@ p, a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-family: "Inter", sans-serif;
 }
 
 .mobile {
@@ -280,6 +285,11 @@ p, a {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .services__title {
+    font-size: 30px;
+  }
+}
 .services__text {
   color: #7D7D7D;
   display: block;
@@ -299,6 +309,11 @@ p, a {
     font-size: 14px;
   }
 }
+@media screen and (min-width: 768px) {
+  .services__text {
+    font-size: 18px;
+  }
+}
 .services__left {
   position: absolute;
   top: 13px;
@@ -314,7 +329,7 @@ p, a {
   .services__left {
     display: none;
     width: 50px;
-    left: 180px;
+    left: 100px;
   }
 }
 .services__right {
@@ -332,7 +347,7 @@ p, a {
   .services__right {
     display: none;
     width: 50px;
-    right: 180px;
+    right: 100px;
   }
 }
 .services__dont {
@@ -348,6 +363,11 @@ p, a {
   background: #F5A623;
   margin-top: 30px;
   padding: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .services__wrap {
+    padding: 40px;
+  }
 }
 .services__list {
   display: flex;
@@ -377,7 +397,18 @@ p, a {
   margin-right: auto;
   padding: 10px;
   border-radius: 10px;
+  width: 240px;
   background: #FFFFFF;
+}
+@media screen and (min-width: 350px) {
+  .services__image {
+    width: 265px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .services__image {
+    width: 330px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .services__image {
@@ -431,6 +462,21 @@ p, a {
   text-align: center;
   margin-top: 50px;
 }
+@media screen and (min-width: 768px) {
+  .services__secondary {
+    width: 390px;
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__secondary {
+    font-size: 40px;
+    width: 518px;
+  }
+}
 .services__description {
   color: #FFFFFF;
   font-size: 14px;
@@ -438,6 +484,11 @@ p, a {
   line-height: 1.2;
   margin-top: 10px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .services__description {
+    font-size: 18px;
+  }
 }
 .services__button {
   color: #FFFFFF;
@@ -505,10 +556,11 @@ p, a {
   .services__items {
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 20px;
   }
 }
 .services__img {
-  width: 120px;
+  width: 110px;
   padding: 5px;
   border-radius: 10px;
   background: var(--Sections-background, #fff);
@@ -530,6 +582,6 @@ p, a {
 }
 @media screen and (min-width: 1200px) {
   .services__img {
-    width: 295px;
+    width: 255px;
   }
 }/*# sourceMappingURL=main.css.map */
