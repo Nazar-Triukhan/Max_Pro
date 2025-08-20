@@ -2,20 +2,22 @@
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: 1px solid red;
+
+@media screen and (min-width: 390px){
+  width: 390px;
+}
+
+@media screen and (min-width: 734px){
+  width: 734px;
+}
+
+@media screen and (min-width: 1396px){
+  width: 1396px;
+      padding-left: 10px;
   padding-right: 10px;
-  // outline: 1px solid red;
-
-@media screen and (min-width: 420px){
-  width: 420px;
-}
-
-@media screen and (min-width: 768px){
-  width: 768px;
-}
-
-@media screen and (min-width: 1200px){
-  width: 1200px;
 }
 
 }

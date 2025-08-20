@@ -12,7 +12,7 @@
   &__img {
     width: 120px;
     height: 34px; 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 734px){
   margin-right: 50px;
 }
   }
@@ -20,7 +20,7 @@
     background: none;
     border: none;
     margin-left: auto;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 734px){
   display: none;
 }
   }
@@ -32,7 +32,7 @@
 
   &__list{
     display: none;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 734px){
   display: flex;
   gap: 30px;
 }
@@ -47,7 +47,7 @@ border-radius: 10px;
 padding: 14px 20px;
 border: none;
 background: var(--buttons-pointing, #F27D08);
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 734px){
   display: block;
   margin-left: auto;
 }
