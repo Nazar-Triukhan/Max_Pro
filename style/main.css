@@ -68,6 +68,7 @@ body {
 .bar__box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 @media screen and (min-width: 734px) {
   .bar__box {
@@ -266,6 +267,8 @@ body {
   }
 }
 .hero__btn {
+  display: block;
+  width: 122px;
   color: var(--text-white, #fff);
   font-size: 16px;
   font-weight: 500;
@@ -337,7 +340,7 @@ body {
 .services__left {
   position: absolute;
   top: 13px;
-  left: 15px;
+  left: 0px;
   width: 30px;
 }
 @media screen and (min-width: 390px) {
@@ -349,7 +352,7 @@ body {
   .services__left {
     display: none;
     width: 50px;
-    left: 100px;
+    left: 70px;
   }
 }
 @media screen and (min-width: 1396px) {
@@ -362,7 +365,7 @@ body {
 .services__right {
   position: absolute;
   top: 16px;
-  right: 15px;
+  right: 0;
   width: 33px;
 }
 @media screen and (min-width: 390px) {
@@ -374,7 +377,7 @@ body {
   .services__right {
     display: none;
     width: 50px;
-    right: 100px;
+    right: 70px;
   }
 }
 @media screen and (min-width: 1396px) {
@@ -640,7 +643,7 @@ body {
 }
 @media screen and (min-width: 390px) {
   .services__img {
-    width: 160px;
+    width: 155px;
   }
 }
 @media screen and (min-width: 734px) {

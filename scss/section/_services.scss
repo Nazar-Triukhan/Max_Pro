@@ -47,7 +47,7 @@
   &__left {
     position: absolute;
     top: 13px;
-    left: 15px;
+    left: 0px;
     width: 30px;
     @media screen and (min-width: 390px) {
       width: 37px;
@@ -55,7 +55,7 @@
     @media screen and (min-width: 734px) {
       display: none;
       width: 50px;
-      left: 100px;
+      left: 70px;
     }
     @media screen and (min-width: 1396px) {
       width: 70px;
@@ -67,7 +67,7 @@
   &__right {
     position: absolute;
     top: 16px;
-    right: 15px;
+    right: 0;
     width: 33px;
     @media screen and (min-width: 390px) {
       width: 37px;
@@ -75,7 +75,7 @@
     @media screen and (min-width: 734px) {
       display: none;
       width: 50px;
-      right: 100px;
+      right: 70px;
     }
     @media screen and (min-width: 1396px) {
       width: 70px;
@@ -316,7 +316,7 @@
       width: 130px;
     }
     @media screen and (min-width: 390px) {
-      width: 160px;
+      width: 155px;
     }
     @media screen and (min-width: 734px) {
       width: 317px;
