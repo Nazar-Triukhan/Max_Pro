@@ -1,10 +1,10 @@
 .conteiner {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 5px;
-  padding-right: 5px;
+  width: 100%;
+  max-width: 1396px;
+  margin: 0 auto;
+  padding: 0 5px;
   outline: 1px solid red;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 390px) {
   .conteiner {
@@ -19,8 +19,7 @@
 @media screen and (min-width: 1396px) {
   .conteiner {
     width: 1396px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
   }
 }
 
@@ -64,6 +63,17 @@ body {
 .bar {
   padding: 15px 0;
   background: #000000;
+  color: #FFFFFF;
+}
+.bar__box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 734px) {
+  .bar__box {
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 .bar__text {
   color: #FFFFFF;
@@ -71,21 +81,23 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
-  width: 100%;
 }
 @media screen and (min-width: 734px) {
   .bar__text {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 734px) {
-  .bar__br {
-    display: none;
-  }
-}
 .bar__link {
-  color: var(--text-white, #fff);
+  color: #FFFFFF;
   text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 734px) {
+  .bar__link {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .nav {

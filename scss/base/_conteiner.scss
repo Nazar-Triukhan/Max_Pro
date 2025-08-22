@@ -1,23 +1,21 @@
- .conteiner {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 5px;
-  padding-right: 5px;
+.conteiner {
+  width: 100%;             
+  max-width: 1396px;         
+  margin: 0 auto;
+  padding: 0 5px;
   outline: 1px solid red;
+    box-sizing: border-box; 
 
-@media screen and (min-width: 390px){
-  width: 390px;
-}
+  @media screen and (min-width: 390px){
+    width: 390px;           
+  }
 
-@media screen and (min-width: 734px){
-  width: 734px;
-}
+  @media screen and (min-width: 734px){
+   width: 734px;
+  }
 
-@media screen and (min-width: 1396px){
-  width: 1396px;
-      padding-left: 10px;
-  padding-right: 10px;
-}
-
+  @media screen and (min-width: 1396px){
+    width: 1396px;
+    padding: 0 10px;
+  }
 }

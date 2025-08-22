@@ -1,6 +1,17 @@
 .bar {
   padding: 15px 0;
   background: $buttons-active;
+ color: $sections-background;
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+        @media screen and (min-width: 734px){
+  flex-direction: row;
+  gap: 10px;
+}
+  }
 
   &__text {
     color: $sections-background;
@@ -8,18 +19,21 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
-    width: 100%;
+
     @media screen and (min-width: 734px){
   font-size: 16px;
 }
   }
-  &__br{
-    @media screen and (min-width: 734px){
-  display: none;
-}
-  }
   &__link {
-    color: var(--text-white, #fff);
+    color: $sections-background;
       text-decoration: underline;
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (min-width: 734px){
+  margin-left: 0;
+  margin-right: 0;
+}
   }
 }
+
+
