@@ -21,6 +21,7 @@
       font-size: 30px;
     }
     @media screen and (min-width: 1396px) {
+      display: block;
       font-size: 40px;
     }
   }
@@ -116,7 +117,7 @@
     flex-direction: column;
     gap: 20px;
     @media screen and (min-width: 1396px) {
-      gap: 50px;
+      gap: 87px;
     }
   }
 
@@ -159,10 +160,13 @@
       width: 265px;
     }
     @media screen and (min-width: 390px) {
-      width: 330px;
+      width: 320px;
+    }
+    @media screen and (min-width: 734px) {
+      width: 310px;
     }
     @media screen and (min-width: 1396px) {
-      width: 500px;
+      width: 648px;
     }
   }
 
@@ -300,10 +304,13 @@
     margin-top: 20px;
     justify-content: center;
     align-items: center;
+      @media screen and (min-width: 734px){
+   gap: 20px;
+   justify-content: start;
+  }
     @media screen and (min-width: 1396px) {
       flex-direction: row;
       flex-wrap: nowrap;
-      gap: 20px;
     }
   }
 
@@ -322,7 +329,7 @@
       width: 317px;
     }
     @media screen and (min-width: 1396px) {
-      width: 255px;
+      width: 300px;
     }
   }
 }

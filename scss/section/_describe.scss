@@ -1,0 +1,120 @@
+.describe {
+  padding: 50px 0;
+
+  &__box{
+    display: flex;
+  }
+   
+  &__btn{
+    color: $sections-background;
+text-align: center;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.2;
+
+border-radius: 5px;
+background: $buttons-active;
+padding: 5px 10px;
+margin-bottom: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+  @media screen and (min-width: 390px){
+    margin-left: 0;        
+  }
+  }
+
+  &__title{
+    color: $text-main;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.2;
+width: 250px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+  @media screen and (min-width: 390px){
+    margin-left: 0;        
+  }
+    @media screen and (min-width: 734px){
+  font-size: 30px;
+  width: 320px;
+  }
+    @media screen and (min-width: 1396px){
+    width: 600px;
+    font-size: 40px;
+  }
+}
+
+&__text{
+    color: $text-secondary;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.2;
+    display: none;
+    width: 300px;
+    text-align: end;
+    margin-top: auto;
+    margin-left: auto;
+      @media screen and (min-width: 734px){
+display: block;
+  }
+      @media screen and (min-width: 1396px){
+    width: 500px;
+    font-size: 18px;
+  }
+}
+
+  &__picture img{
+width: 280px;
+padding: 5px;
+border-radius: 10px;
+background: $secondary-accent;
+margin-left: auto;
+margin-right: auto;
+  @media screen and (min-width: 390px){
+    width: 175px;           
+  }
+      @media screen and (min-width: 734px){
+  width: 220px;
+  }
+
+    @media screen and (min-width: 1396px){
+    width: 432px;
+  }
+
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+      @media screen and (min-width: 390px){
+    flex-direction: row;   
+    flex-wrap: wrap;     
+  }
+      @media screen and (min-width: 734px){
+        justify-content: space-between;
+        margin-top: 30px;
+  }
+    @media screen and (min-width: 1396px){
+margin-top: 50px;
+  }
+  }
+
+
+//   &__item {
+//     &:nth-child(3) {
+//       .describe__picture {
+//         @media screen and (max-width: 733px) {
+//           display: none;
+//         }
+//           @media screen and (min-width: 734px){
+//    display: block;
+//   }
+//       }
+//     }
+// }
+}
+

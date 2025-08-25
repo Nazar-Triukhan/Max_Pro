@@ -310,6 +310,7 @@ body {
 }
 @media screen and (min-width: 1396px) {
   .services__title {
+    display: block;
     font-size: 40px;
   }
 }
@@ -424,7 +425,7 @@ body {
 }
 @media screen and (min-width: 1396px) {
   .services__flex {
-    gap: 50px;
+    gap: 87px;
   }
 }
 @media screen and (min-width: 734px) {
@@ -459,12 +460,17 @@ body {
 }
 @media screen and (min-width: 390px) {
   .services__image {
-    width: 330px;
+    width: 320px;
+  }
+}
+@media screen and (min-width: 734px) {
+  .services__image {
+    width: 310px;
   }
 }
 @media screen and (min-width: 1396px) {
   .services__image {
-    width: 500px;
+    width: 648px;
   }
 }
 .services__heading {
@@ -623,11 +629,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 734px) {
+  .services__items {
+    gap: 20px;
+    justify-content: start;
+  }
+}
 @media screen and (min-width: 1396px) {
   .services__items {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 20px;
   }
 }
 .services__img {
@@ -653,6 +664,127 @@ body {
 }
 @media screen and (min-width: 1396px) {
   .services__img {
-    width: 255px;
+    width: 300px;
+  }
+}
+
+.describe {
+  padding: 50px 0;
+}
+.describe__box {
+  display: flex;
+}
+.describe__btn {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  border-radius: 5px;
+  background: #000000;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 390px) {
+  .describe__btn {
+    margin-left: 0;
+  }
+}
+.describe__title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 390px) {
+  .describe__title {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 734px) {
+  .describe__title {
+    font-size: 30px;
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1396px) {
+  .describe__title {
+    width: 600px;
+    font-size: 40px;
+  }
+}
+.describe__text {
+  color: #7D7D7D;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  display: none;
+  width: 300px;
+  text-align: end;
+  margin-top: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 734px) {
+  .describe__text {
+    display: block;
+  }
+}
+@media screen and (min-width: 1396px) {
+  .describe__text {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+.describe__picture img {
+  width: 280px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #F5A623;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 390px) {
+  .describe__picture img {
+    width: 175px;
+  }
+}
+@media screen and (min-width: 734px) {
+  .describe__picture img {
+    width: 220px;
+  }
+}
+@media screen and (min-width: 1396px) {
+  .describe__picture img {
+    width: 432px;
+  }
+}
+.describe__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 390px) {
+  .describe__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 734px) {
+  .describe__list {
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1396px) {
+  .describe__list {
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
