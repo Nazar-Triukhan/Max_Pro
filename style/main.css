@@ -641,6 +641,9 @@ body {
     flex-wrap: nowrap;
   }
 }
+.services__elem:nth-child(3) .services__video {
+  height: 510px;
+}
 .services__video {
   width: 110px;
   padding: 5px;
@@ -789,6 +792,15 @@ body {
 }
 .describe__item {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.describe__item:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.describe__item:hover .describe__subtext {
+  transform: translateY(0px);
+  opacity: 1;
 }
 .describe__item:nth-child(1) {
   margin-right: 10px;
@@ -811,29 +823,51 @@ body {
 .describe__item:nth-child(3) .describe__subtitle {
   display: none;
 }
+@media screen and (min-width: 734px) {
+  .describe__item:nth-child(3) .describe__subtitle {
+    display: block;
+  }
+}
 .describe__item:nth-child(3) .describe__subtext {
   display: none;
 }
-.describe__position {
-  position: relative;
-}
-.describe__subtitle {
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
+@media screen and (min-width: 734px) {
+  .describe__item:nth-child(3) .describe__subtext {
+    display: block;
+  }
 }
 .describe__subtext {
   color: #FFFFFF;
-  font-size: 10px;
+  overflow: hidden;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
+  transform: translateY(100%);
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: 2;
+  padding: 160px 10px 10px 10px;
+  background: linear-gradient(0deg, rgba(185, 121, 10, 0.4) 65.38%, rgba(180, 160, 88, 0.25) 100%);
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  will-change: transform, opacity;
+}
+@media screen and (min-width: 390px) {
+  .describe__subtext {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 734px) {
+  .describe__subtext {
+    font-size: 16px;
+    padding-top: 180px;
+  }
+}
+@media screen and (min-width: 1396px) {
+  .describe__subtext {
+    font-size: 25px;
+    padding: 700px 20px 20px 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

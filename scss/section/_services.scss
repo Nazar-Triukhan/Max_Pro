@@ -314,6 +314,15 @@
     }
   }
 
+  &__elem{
+    &:nth-child(3){
+      .services__video{
+        height: 510px;
+        
+      }
+    }
+  }
+
   &__video {
     width: 110px;
     padding: 5px;
