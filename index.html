@@ -88,7 +88,7 @@
               <div class="conteiner">
                 <ul class="mobile__list">
                   <li class="mobile__item">
-                    <a class="mobile__link" href="">Our services</a>
+                    <a class="mobile__link" href="#services">Our services</a>
                   </li>
                   <li class="mobile__item">
                     <a class="mobile__link" href="">Our works</a>
@@ -243,32 +243,29 @@
           </p>
           <ul class="services__items">
             <li class="services__elem">
-              <img
-                class="services__img"
-                src="./image/universal/Image (2).png"
-                alt=""
-              />
+<video controls class="services__video">
+  <source src="./image/universal/IMG_3191 (1).MOV" type="video/mp4" aria-label="Video showing stairs with background music, no speech">
+  Ваш браузер не поддерживает видео.
+</video>
+
             </li>
             <li class="services__elem">
-              <img
-                class="services__img"
-                src="./image/universal/Image (3).png"
-                alt=""
-              />
+<video controls class="services__video">
+  <source src="./image/universal/IMG_3190 (1).MOV" type="video/mp4" aria-label="Video showing a kitchen with background music, no speech">
+  Ваш браузер не поддерживает видео.
+</video>
             </li>
             <li class="services__elem">
-              <img
-                class="services__img"
-                src="./image/universal/Image (4).png"
-                alt=""
-              />
+<video controls class="services__video">
+  <source src="./image/universal/IMG_3188 (1).MOV" type="video/mp4" aria-label="Video showing a garage with background music, no speech">
+  Ваш браузер не поддерживает видео.
+</video>
             </li>
             <li class="services__elem">
-              <img
-                class="services__img"
-                src="./image/universal/Image (5).png"
-                alt=""
-              />
+<video controls class="services__video">
+  <source src="./image/universal/IMG_3189 (1).MOV" type="video/mp4" aria-label="Video showing a kitchen renovation with background music, no speech">
+  Ваш браузер не поддерживает видео.
+</video>
             </li>
           </ul>
         </div>
@@ -278,7 +275,7 @@
     <section class="describe">
       <div class="conteiner">
         <div class=" describe__box">
-        <div>
+        <div class="describe__center">
         <button class="describe__btn">Our works</button>
         <h2 class="describe__title">
           Our Projects: Crafted Spaces. Real Results.
@@ -306,6 +303,7 @@
                 media="(min-width: 734px)"
               />
               <source
+              class="describe__image-right"
                 srcset="
                   ./image/mobile/door-mobile@1x.webp 1x,
                   ./image/mobile/door-mobile@2x.webp 2x
@@ -314,10 +312,14 @@
               />
               <img
                 src="./image/desktop/door-destop@1x.webp"
-                alt="Ігор Дем'яненко"
+                alt="door"
                 class="aboutus__image"
               />
             </picture>
+            <div class="describe__padding">
+              <h3 class="describe__subtitle">Transforming Houses Into Homes</h3>
+              <p class="describe__subtext">Each project reflects our commitment to quality, attention to detail, and creating spaces that truly feel like home. From renovations to complete makeovers, we bring your vision to life with expert craftsmanship and personalized solutions.</p>
+              </div>
           </li>
 
           <li class="describe__item">
@@ -337,6 +339,7 @@
                 media="(min-width: 734px)"
               />
               <source
+                class="describe__image-right"
                 srcset="
                   ./image/mobile/staircase-mobile@1x.webp 1x,
                   ./image/mobile/staircase-mobile@2x.webp 2x
@@ -348,6 +351,8 @@
                 alt="staircase"
                 class="aboutus__image"
               />
+              <h3 class="describe__subtitle">Transforming Houses Into Homes</h3>
+              <p class="describe__subtext">Each project reflects our commitment to quality, attention to detail, and creating spaces that truly feel like home. From renovations to complete makeovers, we bring your vision to life with expert craftsmanship and personalized solutions.</p>
             </picture>
           </li>
           <li class="describe__item">
@@ -372,9 +377,11 @@
                 class="describe__img"
               />
             </picture>
+              <h3 class="describe__subtitle">Transforming Houses Into Homes</h3>
+              <p class="describe__subtext">Each project reflects our commitment to quality, attention to detail, and creating spaces that truly feel like home. From renovations to complete makeovers, we bring your vision to life with expert craftsmanship and personalized solutions.</p>
+            </div>
           </li>
         </ul>
-      </div>
     </section>
 
     <script src="./js/mobile.js"></script>
