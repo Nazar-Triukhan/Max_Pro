@@ -1,0 +1,46 @@
+.networks {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__box {
+  position: relative;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar { display: none; }
+
+  background:
+    linear-gradient(to right, #F4F4F4 50.4%, rgba(244,244,244,0.5) 100%),   // левый
+    linear-gradient(to left, #F4F4F4 50.4%, rgba(244,244,244,0.5) 100%);    // правый
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: left center, right center;
+  }
+
+  &__items {
+    display: flex;
+    gap: 45px;
+    white-space: nowrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex: 0 0 auto;
+  }
+
+  &__svg {
+    width: 42px;
+    fill: $text-main;
+  }
+
+  &__text {
+    color: $text-main;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}

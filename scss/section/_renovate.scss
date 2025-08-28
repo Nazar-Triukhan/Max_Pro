@@ -1,0 +1,45 @@
+.renovate{
+padding: 31px 0 20px 0;
+position: relative;
+
+&__title{
+    color: $text-main;
+text-align: center;
+font-size: 20px;
+font-weight: 700;
+line-height: 1.2;
+}
+
+&__subtext{
+    color: $text-secondary;
+text-align: center;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.2;
+}
+
+&__color{
+    padding: 20px 15px;
+border-radius: 20px;
+background-color: $text-main;
+}
+
+&__btn{
+    color: $sections-background;
+text-align: center;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.2;
+padding: 5px 10px;
+border-radius: 5px;
+background: $buttons-pointing;
+border: none;
+}
+
+&__text{
+    color: $sections-background;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.2;
+}
+}
