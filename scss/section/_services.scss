@@ -317,8 +317,21 @@
   &__elem{
     &:nth-child(3){
       .services__video{
+   height: 186px;
+       @media screen and (min-width: 350px) {
+height: 220px;
+    }
+          @media screen and (min-width: 390px){
+        height: 260px;       
+  }
+
+  @media screen and (min-width: 734px){
+        height: 538px;
+  }
+
+  @media screen and (min-width: 1396px){
         height: 510px;
-        
+  }
       }
     }
   }

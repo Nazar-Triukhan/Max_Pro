@@ -1,0 +1,103 @@
+.contact {
+  &__logo {
+    width: 150px;
+    height: 43px;
+  }
+
+  &__box {
+    border-radius: 20px 20px 0 0;
+    background: $sections-background;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    gap: 5px;
+  }
+  &__item .contact__link {
+    font-size: 14px;
+  }
+
+  &__text {
+    color: $text-main;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 21px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    color: $text-secondary;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__title {
+    color: $text-main;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 10px;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.copyright {
+  &__box {
+    border-radius: 0 0 20px 20px;
+    background: $buttons-active;
+    padding: 15px 30px;
+  }
+
+  &__text {
+    color: $sections-background;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: none;
+  }
+
+  &__link {
+    color: $sections-background;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: underline;
+    display: none;
+  }
+
+  &__caption {
+    color: $sections-background;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+  }
+}
