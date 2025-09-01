@@ -150,7 +150,13 @@ body {
   border-radius: 10px;
   padding: 14px 20px;
   border: none;
-  background: var(--buttons-pointing, #F27D08);
+  background: #F27D08;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 300ms;
+  transition-property: background-color;
+}
+.nav__btn:hover {
+  background-color: #ad6014;
 }
 @media screen and (min-width: 734px) {
   .nav__btn {
@@ -166,6 +172,12 @@ body {
   font-weight: 400;
   line-height: normal;
   font-family: "Inter", sans-serif;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 300ms;
+  transition-property: color;
+}
+.nav__link:hover {
+  color: #F5A623;
 }
 
 .mobile {
@@ -194,6 +206,12 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 300ms;
+  transition-property: color;
+}
+.mobile__list .mobile__item .mobile__link:hover {
+  color: #F5A623;
 }
 .mobile.is-hidden {
   transform: translateY(100px);
@@ -276,8 +294,15 @@ body {
   padding: 15px 30px;
   border-radius: 10px;
   margin-top: 30px;
-  background: var(--buttons-pointing, #f27d08);
+  background: #F27D08;
   border: none;
+  background: #F27D08;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 300ms;
+  transition-property: background-color;
+}
+.hero__btn:hover {
+  background-color: #ad6014;
 }
 
 .services {
@@ -557,6 +582,12 @@ body {
   padding: 15px 30px;
   border: none;
   margin-top: 30px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 700ms;
+  transition-property: background-color;
+}
+.services__button:hover {
+  background-color: rgba(239, 138, 6, 0.908);
 }
 @media screen and (min-width: 350px) {
   .services__button {
@@ -940,10 +971,20 @@ body {
   align-items: center;
   gap: 9px;
   flex: 0 0 auto;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 500ms;
+  transition-property: color;
+}
+.networks__item:hover .networks__text {
+  color: #F5A623;
+}
+.networks__item:hover .networks__svg {
+  fill: #F5A623;
 }
 .networks__svg {
   width: 42px;
   fill: #333333;
+  transition: fill 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .networks__text {
   color: #333333;
@@ -951,6 +992,7 @@ body {
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2;
+  transition: color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .renovate {
@@ -1237,6 +1279,12 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 300ms;
+  transition-property: color;
+}
+.contact__link:hover {
+  color: #F5A623;
 }
 .contact__title {
   color: #333333;
@@ -1302,4 +1350,97 @@ body {
     display: block;
     margin-left: auto;
   }
+}
+
+.privacy-policy {
+  font-family: inherit;
+  color: #333333;
+}
+.privacy-policy__container {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.privacy-policy__title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333333;
+}
+.privacy-policy__updated {
+  font-size: 14px;
+  color: #7D7D7D;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.privacy-policy__section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #333333;
+}
+.privacy-policy h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+.privacy-policy ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.privacy-policy li {
+  margin-bottom: 8px;
+}
+.privacy-policy p {
+  margin-bottom: 20px;
+}
+
+.privacy-rights {
+  padding: 50px 0 40px 0;
+  font-family: inherit;
+  color: #333333;
+}
+.privacy-rights__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.privacy-rights p {
+  margin-bottom: 15px;
+}
+.privacy-rights ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.privacy-rights ul li {
+  margin-bottom: 8px;
+  color: #7D7D7D;
+}
+
+.childrens-privacy {
+  padding: 50px 0 40px 0;
+  font-family: inherit;
+  color: #333333;
+}
+.childrens-privacy__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.childrens-privacy p {
+  margin-bottom: 15px;
+}
+.childrens-privacy ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.childrens-privacy ul li {
+  margin-bottom: 8px;
+  color: #7D7D7D;
 }/*# sourceMappingURL=main.css.map */

@@ -85,6 +85,12 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+transition-duration: 300ms;
+transition-property: color;
+&:hover{
+  color: $secondary-accent;
+} 
   }
 
   &__title {
@@ -99,6 +105,7 @@
     display: flex;
     gap: 10px;
   }
+
   &__icon {
     width: 30px;
     height: 30px;

@@ -244,6 +244,12 @@
     padding: 15px 30px;
     border: none;
     margin-top: 30px;
+transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+transition-duration: 700ms;
+transition-property: background-color;
+&:hover{
+  background-color:rgba(239, 138, 6, 0.908);
+}
     @media screen and (min-width: 350px) {
       font-size: 14px;
     }

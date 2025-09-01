@@ -1,0 +1,27 @@
+.childrens-privacy {
+  padding: 50px 0 40px 0;
+  font-family: inherit;
+  color: $text-main;
+
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: $text-main;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 8px;
+      color: $text-secondary;
+    }
+  }
+}
