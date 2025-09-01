@@ -196,11 +196,34 @@
             <li class="services__item">
               <div class="services__flex">
                 <div>
-                  <img
-                    class="services__image"
-                    src="./image/mobile/companys_car-mobile@1x.webp"
-                    alt="company car"
-                  />
+ <picture >
+              <source
+                srcset="
+                  ./image/desktop/car-destop@1x.webp 1x,
+                  ./image/desktop/car-destop@2x.webp 2x
+                "
+                media="(min-width: 1396px)"
+              />
+              <source
+                srcset="
+                  ./image/tablet/car-tablet@1x.webp 1x,
+                  ./image/tablet/car-tablet@2x.webp 2x
+                "
+                media="(min-width: 734px)"
+              />
+              <source
+                srcset="
+                  ./image/mobile/car-mobile@1x.webp 1x,
+                  ./image/mobile/car-mobile@2x.webp 2x
+                "
+                media="(max-width: 734px)"
+              />
+              <img
+                src="./image/desktop/car-destop@1x.webp"
+                alt="door"
+                class="services__image"
+              />
+            </picture>
                 </div>
                 <div>
                   <h3 class="services__heading">
@@ -247,6 +270,7 @@
                 <source
                   src="./image/universal/IMG_3191 (1).MOV"
                   type="video/mp4"
+                   poster="./image/desktop/door-destop@1x.webp"
                   aria-label="Video showing stairs with background music, no speech"
                 />
                 Ваш браузер не поддерживает видео.
@@ -416,6 +440,7 @@
     <section class="networks">
       <div class="networks__wrapper">
         <div class="conteiner networks__box">
+
           <ul class="networks__items">
             <li class="networks__item">
               <svg class="networks__svg">
@@ -448,7 +473,10 @@
               <p class="networks__text">Facebook</p>
             </li>
           </ul>
+                            <div class="networks__left"></div> 
+          <div class="networks__right"></div>
         </div>
+
       </div>
     </section>
 
@@ -727,80 +755,87 @@
       </div>
     </section>
     <footer class="footer">
-<section class="contact">
-  <div class="conteiner contact__box">
-  <a href="./index.html" class="contact__logo">
-    <img class="contact__image" src="./image/mobile/Logo.svg" alt="logo" />
-  </a>
+      <section class="contact">
+        <div class="conteiner contact__box">
+          <div class="contact__wrap">
+            <a href="./index.html" class="contact__logo">
+              <img
+                class="contact__image"
+                src="./image/mobile/Logo.svg"
+                alt="logo"
+              />
+            </a>
 
-  <ul class="contact__info">
-    <li class="contact__item">
-      <p class="contact__text">Email</p>
-      <a href="" class="contact__link">hello@yourcompany.com</a>
-    </li>
-    <li class="contact__item">
-      <p class="contact__text">Phone</p>
-      <a href="" class="contact__link">+7 (707) 123-45-67</a>
-    </li>
-  </ul>
-<ul class="contact__menu">
-  <li class="contact__element">
-    <h3 class="contact__title">Company</h3>
-        <div class="contact__links">
-    <a href="" class="contact__link">Our services</a>
-    <a href="" class="contact__link">Our works</a>
-    <a href="" class="contact__link">About Us</a>
-    </div>
-  </li>
+            <ul class="contact__info">
+              <li class="contact__item">
+                <p class="contact__text">Email</p>
+                <a href="" class="contact__link">hello@yourcompany.com</a>
+              </li>
+              <li class="contact__item">
+                <p class="contact__text">Phone</p>
+                <a href="" class="contact__link">+7 (707) 123-45-67</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact__wraper">
+            <ul class="contact__menu">
+              <li class="contact__element">
+                <h3 class="contact__title">Company</h3>
+                <div class="contact__links">
+                  <a href="" class="contact__link">Our services</a>
+                  <a href="" class="contact__link">Our works</a>
+                  <a href="" class="contact__link">About Us</a>
+                </div>
+              </li>
 
-  <li class="contact__element">
-    <h3 class="contact__title">Legal</h3>
-    <div class="contact__links">
-    <a href="" class="contact__link">Privacy Policy</a>
-    <a href="" class="contact__link">Your Privacy Rights</a>
-    <a href="" class="contact__link">Children’s Privacy</a>
-    </div>
-  </li>
-</ul>
+              <li class="contact__element">
+                <h3 class="contact__title">Legal</h3>
+                <div class="contact__links">
+                  <a href="" class="contact__link">Privacy Policy</a>
+                  <a href="" class="contact__link">Your Privacy Rights</a>
+                  <a href="" class="contact__link">Children’s Privacy</a>
+                </div>
+              </li>
+            </ul>
 
-
-  <ul class="contact__social">
-    <li class="contact__unit">
-      <svg class="contact__icon">
-        <use href="./image/symbol-defs.svg#icon-elp-bek"></use>
-      </svg>
-    </li>
-    <li class="contact__unit">
-      <svg class="contact__icon">
-        <use href="./image/symbol-defs.svg#icon-inst-beck"></use>
-      </svg>
-    </li>
-    <li class="contact__unit">
-      <svg class="contact__icon">
-        <use href="./image/symbol-defs.svg#icon-you-beck"></use>
-      </svg>
-    </li>
-    <li class="contact__unit">
-      <svg class="contact__icon">
-        <use href="./image/symbol-defs.svg#icon-tel-back"></use>
-      </svg>
-    </li>
-    <li class="contact__unit">
-      <svg class="contact__icon">
-        <use href="./image/symbol-defs.svg#icon-face-back"></use>
-      </svg>
-    </li>
-  </ul>
-  </div>
-</section>
+            <ul class="contact__social">
+              <li class="contact__unit">
+                <svg class="contact__icon">
+                  <use href="./image/symbol-defs.svg#icon-elp-bek"></use>
+                </svg>
+              </li>
+              <li class="contact__unit">
+                <svg class="contact__icon">
+                  <use href="./image/symbol-defs.svg#icon-inst-beck"></use>
+                </svg>
+              </li>
+              <li class="contact__unit">
+                <svg class="contact__icon">
+                  <use href="./image/symbol-defs.svg#icon-you-beck"></use>
+                </svg>
+              </li>
+              <li class="contact__unit">
+                <svg class="contact__icon">
+                  <use href="./image/symbol-defs.svg#icon-tel-back"></use>
+                </svg>
+              </li>
+              <li class="contact__unit">
+                <svg class="contact__icon">
+                  <use href="./image/symbol-defs.svg#icon-face-back"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <section class="copyright">
         <div class="conteiner copyright__box">
- <p class="copyright__text">
-            Talk to us about your renovation — 
-          </p>
-          <a class="copyright__link" href="tel:+19518070058">+1 (951) 807-00-58</a>
-        <p class="copyright__caption">© 2025 Max Pro All Right Reserved </p>
+          <p class="copyright__text">Talk to us about your renovation —</p>
+          <a class="copyright__link" href="tel:+19518070058"
+            >+1 (951) 807-00-58</a
+          >
+          <p class="copyright__caption">© 2025 Max Pro All Right Reserved</p>
         </div>
       </section>
     </footer>

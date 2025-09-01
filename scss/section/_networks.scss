@@ -5,17 +5,34 @@
 
   &__box {
   position: relative;
-  overflow-x: auto;
+  // overflow-x: auto;
+  overflow: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar { display: none; }
+  }
 
-  background:
-    linear-gradient(to right, #F4F4F4 50.4%, rgba(244,244,244,0.5) 100%),   // левый
-    linear-gradient(to left, #F4F4F4 50.4%, rgba(244,244,244,0.5) 100%);    // правый
-  background-repeat: no-repeat;
-  background-size: 80px 80px;
-  background-position: left center, right center;
+  &__left{
+    width: 80px;
+    height: 80px;
+  background: linear-gradient(90deg, #F4F4F4 50.4%, rgba(244, 244, 244, 0.5) 100%);
+    position: absolute;
+left: 0;
+    top: 35px;
+      @media screen and (min-width: 734px){
+   width: 90px;
+  }
+  }
+  &__right{
+    width: 80px;
+    height: 80px;
+  background: linear-gradient(270deg, #F4F4F4 50.4%, rgba(244, 244, 244, 0.5) 100%);
+  position: absolute;
+  right: 0;
+    top: 35px; 
+      @media screen and (min-width: 734px){
+   width: 90px;
+  }   
   }
 
   &__items {
