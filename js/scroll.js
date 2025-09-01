@@ -21,3 +21,5 @@ setInterval(() => {
   index = (index + 1) % slides.length;
   setBackground(slides[index]);
 }, 4000);
+
+
