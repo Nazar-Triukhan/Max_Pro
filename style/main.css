@@ -496,6 +496,7 @@ body {
 @media screen and (min-width: 1396px) {
   .services__image {
     width: 648px;
+    height: 320px;
   }
 }
 .services__heading {
@@ -967,8 +968,6 @@ body {
   white-space: nowrap;
 }
 .networks__item {
-  display: flex;
-  align-items: center;
   gap: 9px;
   flex: 0 0 auto;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -980,6 +979,11 @@ body {
 }
 .networks__item:hover .networks__svg {
   fill: #F5A623;
+}
+.networks__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .networks__svg {
   width: 42px;
