@@ -163,11 +163,34 @@
             <li class="services__item">
               <div class="services__flex">
                 <div>
-                  <img
-                    class="services__image"
-                    src="./image/universal/max-pro.png"
-                    alt="arrow" data-aos="flip-up"
-                  />
+                  <picture data-aos="flip-up">
+                    <source data-aos="flip-up"
+                      srcset="
+                        ./image/desktop/max-desktop@1x.webp 1x,
+                        ./image/desktop/max-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1396px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/mobile/max-mobile@1x.webp 1x,
+                        ./image/mobile/max-mobile@2x.webp 2x
+                      "
+                      media="(min-width: 734px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/mobile/max-mobile@1x.webp 1x,
+                        ./image/mobile/max-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 734px)"
+                    />
+                    <img
+                      src="./image/mobile/max-mobile@1x.webp"
+                      alt="door"
+                      class="services__image" data-aos="flip-up"
+                    />
+                  </picture>
                 </div>
                 <div>
                   <h3 class="services__heading" data-aos="flip-up">
