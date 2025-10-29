@@ -233,6 +233,23 @@ body {
   border-radius: 20px;
   padding: 40px 50px 86px 20px;
 }
+@media screen and (min-width: 390px) {
+  .hero__box {
+    width: 310px;
+  }
+}
+@media screen and (min-width: 734px) {
+  .hero__box {
+    width: 655px;
+  }
+}
+@media screen and (min-width: 1396px) {
+  .hero__box {
+    height: 300px;
+    width: 1307px;
+    padding: 60px 50px 90px 40px;
+  }
+}
 .hero__title {
   color: var(--text-white, #fff);
   font-size: 24px;
@@ -242,19 +259,19 @@ body {
 }
 @media screen and (min-width: 390px) {
   .hero__title {
-    width: 320px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 734px) {
   .hero__title {
     width: 661px;
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1396px) {
   .hero__title {
     width: 707px;
-    font-size: 60px;
+    font-size: 45px;
   }
 }
 .hero__text {
