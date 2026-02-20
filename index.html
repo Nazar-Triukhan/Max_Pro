@@ -1,35 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSP з дозволеними зовнішніми стилями -->
 <meta
   http-equiv="Content-Security-Policy"
-  content="default-src 'self'; 
-           img-src 'self' data:; 
-           script-src 'self' 'unsafe-inline'; 
-           style-src 'self' 'unsafe-inline';"
+  content="
+    default-src 'self';
+    img-src 'self' data:;
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    font-src 'self' https://fonts.gstatic.com;
+    connect-src 'self' https://cdnjs.cloudflare.com;
+  "
 />
-<title>MaxPro | Home Renovation & Interior Design</title>
 
-<meta name="description" content="MaxPro provides home renovations and interior remodeling with modern designs, quality materials, and personalized solutions.">
+    <title>MaxPro | Home Renovation & Interior Design</title>
+    <meta
+      name="description"
+      content="MaxPro provides home renovations and interior remodeling with modern designs, quality materials, and personalized solutions."
+    />
 
-    <link rel="stylesheet" href="./aos/aos.css">
-  <!-- favicons -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="./aos/aos.css" />
 
+    <!-- favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Normalize CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -41,6 +51,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Основні стилі -->
     <link rel="stylesheet" href="./style/main.min.css" />
   </head>
 
@@ -51,38 +63,51 @@
           <p class="bar__text" data-aos="fade-up">
             Let’s talk about your renovation project — call us today
           </p>
-          <a class="bar__link" href="tel:+19518070058" data-aos="fade-up">+1 (951) 807-0058</a>
+          <a class="bar__link" href="tel:+19518070058" data-aos="fade-up"
+            >+1 (951) 807-0058</a
+          >
         </div>
       </section>
 
       <section class="nav">
         <div class="conteiner nav__box">
           <a href="./index.html">
-            <img class="nav__img" src="./image/mobile/Logo.svg" alt="logo" data-aos="fade-up"/>
+            <img
+              class="nav__img"
+              src="./image/mobile/Logo.svg"
+              alt="logo"
+              data-aos="fade-up"
+            />
           </a>
 
           <button class="nav__menu" data-mobile-toggle>
             <img
               class="nav__burger"
               src="./image/mobile/textalign-left.svg"
-              alt="burger__menu" 
+              alt="burger__menu"
             />
           </button>
 
           <nav>
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#services" data-aos="fade-up">Our services</a>
+                <a class="nav__link" href="#services" data-aos="fade-up"
+                  >Our services</a
+                >
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#describe" data-aos="fade-up">Our works</a>
+                <a class="nav__link" href="#describe" data-aos="fade-up"
+                  >Our works</a
+                >
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#renovate" data-aos="fade-up">About Us</a>
+                <a class="nav__link" href="#renovate" data-aos="fade-up"
+                  >About Us</a
+                >
               </li>
             </ul>
           </nav>
-          <a  href="#footer" class="nav__btn" data-aos="fade-up">Contact Us</a>
+          <a href="#footer" class="nav__btn" data-aos="fade-up">Contact Us</a>
           <div class="beckdrop">
             <div class="mobile is-hidden" data-mobile>
               <div class="conteiner">
@@ -105,13 +130,13 @@
     </header>
 
     <!--  -->
-
+<main>
     <section class="hero">
       <div class="conteiner">
         <div class="hero__box">
           <h1 class="hero__title">
-            Built with Skill. Designed for Life.
-Reliable remodeling. Remarkable results.
+            Built with Skill. Designed for Life. Reliable remodeling. Remarkable
+            results.
           </h1>
           <p class="hero__text" data-aos="fade-up">
             Stylish interiors, functional spaces, and quality that lasts.
@@ -121,7 +146,8 @@ Reliable remodeling. Remarkable results.
           <a
             class="hero__btn"
             href="https://www.instagram.com/maxpro_remodeling_/"
-            target="_blank" data-aos="fade-up"
+            target="_blank"
+            data-aos="fade-up"
             >Leave a request</a
           >
         </div>
@@ -130,30 +156,23 @@ Reliable remodeling. Remarkable results.
 
     <section class="services" id="services">
       <div class="conteiner services__box">
-        <h2 class="services__title" data-aos="fade-up">We Don’t Just Renovate Spaces</h2>
+        <h2 class="services__title" data-aos="fade-up">
+          We Don’t Just Renovate Spaces
+        </h2>
         <p class="services__text" data-aos="fade-up">
           Clear process. Results that feel like home.
         </p>
-
-        <img
-          class="services__left"
-          src="./image/mobile/left_black.svg"
-          alt="left arrow" loading="lazy"
-        />
-        <img
-          class="services__right"
-          src="./image/mobile/rite_black.svg"
-          alt="right arrow" loading="lazy"
-        />
         <img
           class="services__left services__dont"
           src="./image/desktop/left.svg"
-          alt="left arrow" loading="lazy"
+          alt="left arrow"
+          loading="lazy"
         />
         <img
           class="services__right services__dont"
           src="./image/desktop/right.svg"
-          alt="right arrow" loading="lazy"
+          alt="right arrow"
+          loading="lazy"
         />
 
         <div class="services__wrap">
@@ -162,7 +181,8 @@ Reliable remodeling. Remarkable results.
               <div class="services__flex">
                 <div>
                   <picture data-aos="flip-up">
-                    <source data-aos="flip-up"
+                    <source
+                      data-aos="flip-up"
                       srcset="
                         ./image/desktop/max-desktop@1x.webp 1x,
                         ./image/desktop/max-desktop@2x.webp 2x
@@ -186,24 +206,30 @@ Reliable remodeling. Remarkable results.
                     <img
                       src="./image/mobile/max-mobile@1x.webp"
                       alt="door"
-                      class="services__image" data-aos="flip-up" loading="lazy"
+                      class="services__image"
+                      data-aos="flip-up"
+                      loading="lazy"
                     />
                   </picture>
                 </div>
-                <div>
+                <div class="services__width">
                   <h3 class="services__heading" data-aos="flip-up">
                     Complete Home Renovation & Space Reimagining
                   </h3>
                   <p class="services__desc" data-aos="flip-up">
- From Europe to America - 21 Years of Building
-Beautiful Spaces.
-Max Pro Remodeling & Handyman combines
-timeless European craftsmanship with modern U.S.
-standards to deliver reliable, high-quality
-transformations for every home.
+                    From Europe to America - 21 Years of Building Beautiful
+                    Spaces. Max Pro Remodeling & Handyman combines timeless
+                    European craftsmanship with modern U.S. standards to deliver
+                    reliable, high-quality transformations for every home.
                   </p>
                   <div class="services__wraper">
-                    <a  href="https://www.instagram.com/maxpro_remodeling_/" target="_blank" class="services__button" data-aos="flip-up">Leave a request</a>
+                    <a
+                      href="https://www.instagram.com/maxpro_remodeling_/"
+                      target="_blank"
+                      class="services__button"
+                      data-aos="flip-up"
+                      >Leave a request</a
+                    >
                     <img
                       class="services__one"
                       src="./image/mobile/Icon_botton.svg"
@@ -212,7 +238,8 @@ transformations for every home.
                     <img
                       class="services__des"
                       src="./image/desktop/destop-inline.svg"
-                      alt="destop inline line " loading="lazy"
+                      alt="destop inline line "
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -223,7 +250,8 @@ transformations for every home.
               <div class="services__flex">
                 <div>
                   <picture data-aos="flip-up">
-                    <source data-aos="flip-up"
+                    <source
+                      data-aos="flip-up"
                       srcset="
                         ./image/desktop/car-destop@1x.webp 1x,
                         ./image/desktop/car-destop@2x.webp 2x
@@ -247,34 +275,44 @@ transformations for every home.
                     <img
                       src="./image/desktop/car-destop@1x.webp"
                       alt="door"
-                      class="services__image" data-aos="flip-up" loading="lazy"
+                      class="services__image"
+                      data-aos="flip-up"
+                      loading="lazy"
                     />
                   </picture>
                 </div>
-                <div>
+                <div class="services__width">
                   <h3 class="services__heading" data-aos="flip-up">
                     From the Ground Up — We Handle It All
                   </h3>
                   <p class="services__desc" data-aos="flip-up">
-Transforming Houses into Dream Homes
-From complete remodels to custom finishes — Max Pro Remodeling & Handyman delivers craftsmanship, reliability, and modern design you can trust.
+                    Transforming Houses into Dream Homes From complete remodels
+                    to custom finishes — Max Pro Remodeling & Handyman delivers
+                    craftsmanship, reliability, and modern design you can trust.
                   </p>
                   <div class="services__wraper">
-                    <a href="https://www.instagram.com/maxpro_remodeling_/" target="_blank" class="services__button" data-aos="flip-up">Leave a request</a>
+                    <a
+                      href="https://www.instagram.com/maxpro_remodeling_/"
+                      target="_blank"
+                      class="services__button"
+                      data-aos="flip-up"
+                      >Leave a request</a
+                    >
                     <img
                       class="services__tuo services__dont"
                       src="./image/tablet/left.svg"
                       alt="arrow"
                     />
-                    <img
+                    <!-- <img
                       class="services__tuo services__none"
                       src="./image/mobile/Icon_left-botton.svg"
                       alt="arrow"
-                    />
+                    /> -->
                     <img
                       class="services__des"
                       src="./image/desktop/destop-inline.svg"
-                      alt="destop inline line " loading="lazy"
+                      alt="destop inline line "
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -294,14 +332,14 @@ From complete remodels to custom finishes — Max Pro Remodeling & Handyman deli
                 controls
                 class="services__video"
                 aria-label="Video showing stairs with background music, no speech"
-data-aos="fade-up"
+                data-aos="fade-up"
               >
                 <source
                   src="./image/universal/home-transformation.mp4"
                   type="video/mp4"
                 />
-                
-Your browser does not support video.
+
+                Your browser does not support video.
               </video>
             </li>
 
@@ -310,14 +348,14 @@ Your browser does not support video.
                 controls
                 class="services__video"
                 aria-label="Video showing a kitchen with background music, no speech"
-data-aos="fade-up"
+                data-aos="fade-up"
               >
                 <source
                   src="./image/universal/staircase-design.mp4"
                   type="video/mp4"
                 />
-                
-Your browser does not support video.
+
+                Your browser does not support video.
               </video>
             </li>
 
@@ -326,14 +364,14 @@ Your browser does not support video.
                 controls
                 class="services__video"
                 aria-label="Video showing a garage with background music, no speech"
-data-aos="fade-up"
+                data-aos="fade-up"
               >
                 <source
                   src="./image/universal/kitchen-remodel.mp4"
                   type="video/mp4"
                 />
-                
-Your browser does not support video.
+
+                Your browser does not support video.
               </video>
             </li>
 
@@ -342,14 +380,14 @@ Your browser does not support video.
                 controls
                 class="services__video"
                 aria-label="Video showing a kitchen renovation with background music, no speech"
-data-aos="fade-up"
+                data-aos="fade-up"
               >
                 <source
                   src="./image/universal/garage-renovation.mp4"
                   type="video/mp4"
                 />
 
-Your browser does not support video.
+                Your browser does not support video.
               </video>
             </li>
           </ul>
@@ -374,7 +412,7 @@ Your browser does not support video.
         </div>
         <ul class="describe__list">
           <li class="describe__item">
-            <picture class="describe__picture" >
+            <picture class="describe__picture">
               <source
                 srcset="
                   ./image/desktop/door-destop@1x.webp 1x,
@@ -400,14 +438,15 @@ Your browser does not support video.
               <img
                 src="./image/desktop/door-destop@1x.webp"
                 alt="door"
-                class="aboutus__image" data-aos="fade-up" loading="lazy"
+                class="aboutus__image"
+                data-aos="fade-up"
+                loading="lazy"
               />
             </picture>
             <div class="describe__padding">
               <p class="describe__subtext">
-Every Detail Matters.
-Precision, cleanliness, and perfect finishing -
-that's the Max Pro standard.
+                Every Detail Matters. Precision, cleanliness, and perfect
+                finishing - that's the Max Pro standard.
               </p>
             </div>
           </li>
@@ -439,12 +478,13 @@ that's the Max Pro standard.
               <img
                 src="./image/tablet/staircase-tablet@1x.webp"
                 alt="staircase"
-                class="aboutus__image" data-aos="fade-up" loading="lazy"
+                class="aboutus__image"
+                data-aos="fade-up"
+                loading="lazy"
               />
               <p class="describe__subtext">
-Built to Last. Designed to Impress.
-Strong, stylish, and expertly crafted — quality you
-can see and feel.
+                Built to Last. Designed to Impress. Strong, stylish, and
+                expertly crafted — quality you can see and feel.
               </p>
             </picture>
           </li>
@@ -467,13 +507,14 @@ can see and feel.
               <img
                 src="./image/universal/floor.png"
                 alt="floor"
-                class="describe__img" data-aos="fade-up" loading="lazy"
+                class="describe__img"
+                data-aos="fade-up"
+                loading="lazy"
               />
             </picture>
             <p class="describe__subtext">
-Fresh Spaces. Real Results.
-From concept to completion - we transform every
-room into something special.
+              Fresh Spaces. Real Results. From concept to completion - we
+              transform every room into something special.
             </p>
           </li>
         </ul>
@@ -483,45 +524,57 @@ room into something special.
     <section class="networks">
       <div class="networks__wrapper">
         <div class="conteiner networks__box">
-          <ul class="networks__items" >
+          <ul class="networks__items">
             <li class="networks__item" data-aos="flip-up">
               <a href="#" class="networks__link" target="_blank">
-              <svg class="networks__svg" >
-                <use href="./image/symbol-defs.svg#icon-youtube"></use>
-              </svg>
-              <p class="networks__text">YouTube</p>
+                <svg class="networks__svg">
+                  <use href="./image/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+                <p class="networks__text">YouTube</p>
               </a>
             </li>
             <li class="networks__item" data-aos="flip-up">
-              <a href="https://www.instagram.com/maxpro_remodeling_?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" class="networks__link" target="_blank">
-              <svg class="networks__svg">
-                <use href="./image/symbol-defs.svg#icon-instargam"></use>
-              </svg>
-              <p class="networks__text">Instagram</p>
+              <a
+                href="https://www.instagram.com/maxpro_remodeling_?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
+                class="networks__link"
+                target="_blank"
+              >
+                <svg class="networks__svg">
+                  <use href="./image/symbol-defs.svg#icon-instargam"></use>
+                </svg>
+                <p class="networks__text">Instagram</p>
               </a>
             </li>
             <li class="networks__item" data-aos="flip-up">
-              <a href="https://m.yelp.com/biz/max-pro-remodeling-and-handyman-san-jacinto" class="networks__link" target="_blank">
-              <svg class="networks__svg">
-                <use href="./image/symbol-defs.svg#icon-elp"></use>
-              </svg>
-              <p class="networks__text">Yelp</p>
+              <a
+                href="https://m.yelp.com/biz/max-pro-remodeling-and-handyman-san-jacinto"
+                class="networks__link"
+                target="_blank"
+              >
+                <svg class="networks__svg">
+                  <use href="./image/symbol-defs.svg#icon-elp"></use>
+                </svg>
+                <p class="networks__text">Yelp</p>
               </a>
             </li>
             <li class="networks__item" data-aos="flip-up">
               <a href="#" class="networks__link" target="_blank">
-              <svg class="networks__svg">
-                <use href="./image/symbol-defs.svg#icon-telegram"></use>
-              </svg>
-              <p class="networks__text">Telegram</p>
+                <svg class="networks__svg">
+                  <use href="./image/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+                <p class="networks__text">Telegram</p>
               </a>
             </li>
             <li class="networks__item" data-aos="flip-up">
-              <a href="https://www.facebook.com/profile.php?id=61578129131532&mibextid=wwXIfr" class="networks__link" target="_blank">
-              <svg class="networks__svg">
-                <use href="./image/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-              <p class="networks__text">Facebook</p>
+              <a
+                href="https://www.facebook.com/profile.php?id=61578129131532&mibextid=wwXIfr"
+                class="networks__link"
+                target="_blank"
+              >
+                <svg class="networks__svg">
+                  <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+                <p class="networks__text">Facebook</p>
               </a>
             </li>
           </ul>
@@ -533,7 +586,9 @@ room into something special.
 
     <section class="renovate" id="renovate">
       <div class="conteiner renovate__box">
-        <h2 class="renovate__title" data-aos="flip-up">We Don’t Just Renovate Spaces</h2>
+        <h2 class="renovate__title" data-aos="flip-up">
+          We Don’t Just Renovate Spaces
+        </h2>
         <p class="renovate__subtext" data-aos="flip-up">
           Clear process. Results that feel like home.
         </p>
@@ -543,28 +598,32 @@ room into something special.
             <img
               src="./image/mobile/left_black.svg"
               alt="left arrow"
-              class="renovate__arrow" loading="lazy"
+              class="renovate__arrow"
+              loading="lazy"
             />
           </li>
           <li class="renovate__element">
             <img
               src="./image/mobile/rite_black.svg"
               alt="right arrow"
-              class="renovate__arrow" loading="lazy"
+              class="renovate__arrow"
+              loading="lazy"
             />
           </li>
           <li class="renovate__element">
             <img
               src="./image/desktop/left.svg"
               alt="left arrow"
-              class="renovate__arrow" loading="lazy"
+              class="renovate__arrow"
+              loading="lazy"
             />
           </li>
           <li class="renovate__element">
             <img
               src="./image/desktop/right.svg"
               alt="right arrow"
-              class="renovate__arrow" loading="lazy"
+              class="renovate__arrow"
+              loading="lazy"
             />
           </li>
         </ul>
@@ -584,7 +643,7 @@ room into something special.
           <ul class="renovate__list">
             <li class="renovate__item">
               <picture class="renovate__picture">
-                <source 
+                <source
                   srcset="
                     ./image/desktop/kitchen1-destop@1x.webp 1x,
                     ./image/desktop/kitchen1-destop@2x.webp 2x
@@ -608,7 +667,9 @@ room into something special.
                 <img
                   src="./image/desktop/kitchen1-destop@1x.webp"
                   alt="kitchen one"
-                  class="renovate__image" data-aos="flip-up" loading="lazy"
+                  class="renovate__image"
+                  data-aos="flip-up"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -639,7 +700,9 @@ room into something special.
                 <img
                   src="./image/desktop/kitchen2-destop@1x.webp"
                   alt="kitchen two"
-                  class="renovate__image" data-aos="flip-up" loading="lazy"
+                  class="renovate__image"
+                  data-aos="flip-up"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -670,7 +733,9 @@ room into something special.
                 <img
                   src="./image/desktop/kitchen3-destop@1x.webp"
                   alt="kitchen three"
-                  class="renovate__image" data-aos="flip-up" loading="lazy"
+                  class="renovate__image"
+                  data-aos="flip-up"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -701,7 +766,9 @@ room into something special.
                 <img
                   src="./image/mobile/kitchen4-mobile@1x.webp"
                   alt="kitchen four"
-                  class="renovate__image" data-aos="flip-up" loading="lazy"
+                  class="renovate__image"
+                  data-aos="flip-up"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -732,7 +799,9 @@ room into something special.
                 <img
                   src="./image/desktop/kitchen5-destop@1x.webp"
                   alt="kitchen five"
-                  class="renovate__image" data-aos="flip-up" loading="lazy"
+                  class="renovate__image"
+                  data-aos="flip-up"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -763,7 +832,9 @@ room into something special.
                 <img
                   src="./image/desktop/kitchen6-destop@1x.webp"
                   alt="kitchen six"
-                  class="renovate__image" data-aos="flip-up" loading="lazy"
+                  class="renovate__image"
+                  data-aos="flip-up"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -780,7 +851,8 @@ room into something special.
                 <img
                   src="./image/desktop/kitchen7-destop@1x.webp"
                   alt="kitchen seven"
-                  class="renovate__image" data-aos="flip-up"
+                  class="renovate__image"
+                  data-aos="flip-up"
                 />
               </picture>
             </li>
@@ -797,7 +869,9 @@ room into something special.
                 <img
                   src="./image/desktop/kitchen8-destop@1x.webp"
                   alt="kitchen eight"
-                  class="renovate__image" data-aos="flip-up" loading="lazy"
+                  class="renovate__image"
+                  data-aos="flip-up"
+                  loading="lazy"
                 />
               </picture>
             </li>
@@ -805,7 +879,7 @@ room into something special.
         </div>
       </div>
     </section>
-
+</main>
     <footer class="footer" id="footer">
       <section class="contact">
         <div class="conteiner contact__box">
@@ -814,18 +888,30 @@ room into something special.
               <img
                 class="contact__image"
                 src="./image/mobile/Logo.svg"
-                alt="logo" data-aos="fade-up" loading="lazy"
-              /> 
+                alt="logo"
+                data-aos="fade-up"
+                loading="lazy"
+              />
             </a>
 
             <ul class="contact__info">
               <li class="contact__item">
                 <p class="contact__text" data-aos="fade-up">Email</p>
-                <a href="mailto:Isaev230785@gmail.com" class="contact__link" data-aos="fade-up">Isaev230785@gmail.com</a>
+                <a
+                  href="mailto:Isaev230785@gmail.com"
+                  class="contact__link"
+                  data-aos="fade-up"
+                  >Isaev230785@gmail.com</a
+                >
               </li>
               <li class="contact__item">
                 <p class="contact__text" data-aos="fade-up">Phone</p>
-          <a class="contact__link" href="tel:+19518070058" data-aos="fade-up">+1 (951) 807-0058</a>
+                <a
+                  class="contact__link"
+                  href="tel:+19518070058"
+                  data-aos="fade-up"
+                  >+1 (951) 807-0058</a
+                >
               </li>
             </ul>
           </div>
@@ -834,56 +920,86 @@ room into something special.
               <li class="contact__element">
                 <h3 class="contact__title" data-aos="flip-up">Company</h3>
                 <div class="contact__links">
-                  <a href="#services"class="contact__link"  data-aos="fade-up">Our services</a>
-                  <a href="#describe" class="contact__link" data-aos="fade-up">Our works</a>
-                  <a href="#renovate" class="contact__link" data-aos="fade-up">About Us</a>
+                  <a href="#services" class="contact__link" data-aos="fade-up"
+                    >Our services</a
+                  >
+                  <a href="#describe" class="contact__link" data-aos="fade-up"
+                    >Our works</a
+                  >
+                  <a href="#renovate" class="contact__link" data-aos="fade-up"
+                    >About Us</a
+                  >
                 </div>
               </li>
 
               <li class="contact__element">
                 <h3 class="contact__title" data-aos="flip-up">Legal</h3>
                 <div class="contact__links">
-                  <a href="./privacy-policy.html" class="contact__link" data-aos="fade-up">Privacy Policy</a>
-                  <a href="./privacy-rights.html" class="contact__link" data-aos="fade-up">Your Privacy Rights</a>
-                  <a href="./childrens-privacy.html" class="contact__link" data-aos="fade-up">Children’s Privacy</a>
+                  <a
+                    href="./privacy-policy.html"
+                    class="contact__link"
+                    data-aos="fade-up"
+                    >Privacy Policy</a
+                  >
+                  <a
+                    href="./privacy-rights.html"
+                    class="contact__link"
+                    data-aos="fade-up"
+                    >Your Privacy Rights</a
+                  >
+                  <a
+                    href="./childrens-privacy.html"
+                    class="contact__link"
+                    data-aos="fade-up"
+                    >Children’s Privacy</a
+                  >
                 </div>
               </li>
             </ul>
 
             <ul class="contact__social">
               <li class="contact__unit" data-aos="flip-up">
-                <a href="https://m.yelp.com/biz/max-pro-remodeling-and-handyman-san-jacinto" target="_blank">
-                <svg class="contact__icon">
-                  <use href="./image/symbol-defs.svg#icon-elp-bek"></use>
-                </svg>
+                <a
+                  href="https://m.yelp.com/biz/max-pro-remodeling-and-handyman-san-jacinto"
+                  target="_blank"
+                >
+                  <svg class="contact__icon">
+                    <use href="./image/symbol-defs.svg#icon-elp-bek"></use>
+                  </svg>
                 </a>
               </li>
               <li class="contact__unit" data-aos="flip-up">
-                <a href="https://www.instagram.com/maxpro_remodeling_?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank">
-                <svg class="contact__icon">
-                  <use href="./image/symbol-defs.svg#icon-inst-beck"></use>
-                </svg>
+                <a
+                  href="https://www.instagram.com/maxpro_remodeling_?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <svg class="contact__icon">
+                    <use href="./image/symbol-defs.svg#icon-inst-beck"></use>
+                  </svg>
                 </a>
               </li>
               <li class="contact__unit" data-aos="flip-up">
                 <a href="" target="_blank">
-                <svg class="contact__icon">
-                  <use href="./image/symbol-defs.svg#icon-you-beck"></use>
-                </svg>
+                  <svg class="contact__icon">
+                    <use href="./image/symbol-defs.svg#icon-you-beck"></use>
+                  </svg>
                 </a>
               </li>
               <li class="contact__unit" data-aos="flip-up">
                 <a href="" target="_blank">
-                <svg class="contact__icon">
-                  <use href="./image/symbol-defs.svg#icon-tel-back"></use>
-                </svg>
+                  <svg class="contact__icon">
+                    <use href="./image/symbol-defs.svg#icon-tel-back"></use>
+                  </svg>
                 </a>
               </li>
               <li class="contact__unit" data-aos="flip-up">
-                <a href="https://www.facebook.com/profile.php?id=61578129131532&mibextid=wwXIfr" target="_blank">
-                <svg class="contact__icon">
-                  <use href="./image/symbol-defs.svg#icon-face-back"></use>
-                </svg>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61578129131532&mibextid=wwXIfr"
+                  target="_blank"
+                >
+                  <svg class="contact__icon">
+                    <use href="./image/symbol-defs.svg#icon-face-back"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -908,7 +1024,7 @@ room into something special.
     <script src="./js/video.js"></script>
     <script src="./aos/aos.js"></script>
     <script>
-  AOS.init();
-</script>
+      AOS.init();
+    </script>
   </body>
 </html>

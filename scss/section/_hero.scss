@@ -1,68 +1,38 @@
 .hero {
-&__box {
-    background:
-   url('./image/desktop/hero_destop.webp') center/cover no-repeat;
-      @media screen and (min-width: 390px){
-    width: 310px;           
-  }
-
-  @media screen and (min-width: 734px){
-   width: 655px;
-  }
-
-  @media screen and (min-width: 1396px){
-height: 300px;
-width: 1307px;
-padding: 60px 50px 90px 40px;
-  }
-
+  &__box {
+    background: url("./image/desktop/hero_destop.webp") center/cover no-repeat;
     border-radius: 20px;
-    padding: 40px 50px 86px 20px;  
+    padding: clamp(2.5rem, 1.812rem + 3.44vw, 4.813rem) 50px
+      clamp(5.375rem, 5.561rem + -0.93vw, 4.75rem)
+      clamp(1.25rem, 0.878rem + 1.86vw, 2.5rem);
   }
 
   &__title {
     color: var(--text-white, #fff);
-    font-size: 24px;
+    font-size: clamp(1.5rem, 1.11rem + 1.95vw, 2.813rem);
     font-weight: 600;
     line-height: normal;
-    width: 100%;
-    @media screen and (min-width: 390px) {
-      width: 100%;
-    }
-    @media screen and (min-width: 734px) {
-      width: 661px;
-      font-size: 30px;
-    }
+    width: clamp(15rem, 6.32rem + 43.4vw, 44.188rem);
+    line-height: 1.1;
     @media screen and (min-width: 1396px) {
-      width: 707px;
-      font-size: 45px;
+      line-height: 1.4;
     }
   }
 
   &__text {
     color: var(--text-white, #fff);
-    font-size: 14px;
+    font-size: clamp(0.875rem, 0.682rem + 0.97vw, 1.125rem);
     font-weight: 400;
     line-height: normal;
-    width: 100%;
+    width: clamp(14.875rem, 6.158rem + 43.59vw, 44.188rem);
     margin-top: 10px;
-    @media screen and (min-width: 390px) {
-      width: 320px;
-    }
-    @media screen and (min-width: 734px) {
-      width: 661px;
-      font-size: 18px;
-    }
-    @media screen and (min-width: 1396px) {
-      width: 707px;
-    }
   }
 
   &__btn {
     display: block;
-    width: 122px;
+    width: 180px;
     color: var(--text-white, #fff);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     line-height: normal;
     padding: 15px 30px;
@@ -71,11 +41,11 @@ padding: 60px 50px 90px 40px;
     background: $buttons-pointing;
     border: none;
     background: $buttons-pointing;
-transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-transition-duration: 300ms;
-transition-property: background-color;
-&:hover{
-  background-color:#ad6014;
-}
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 300ms;
+    transition-property: background-color;
+    &:hover {
+      background-color: #ad6014;
+    }
   }
 }

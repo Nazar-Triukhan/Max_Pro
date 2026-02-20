@@ -22,7 +22,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
-
     border-radius: 5px;
     background: $buttons-active;
     padding: 5px 10px;
@@ -30,6 +29,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
     @media screen and (min-width: 390px) {
       margin-left: 0;
     }
@@ -37,73 +37,34 @@
 
   &__title {
     color: $text-main;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 1.203rem + 1.49vw, 2.5rem);
     font-weight: 700;
     line-height: 1.2;
-    width: 250px;
-    @media screen and (min-width: 390px) {
-      margin-left: 0;
-    }
-    @media screen and (min-width: 734px) {
-      font-size: 30px;
-      width: 320px;
-    }
-    @media screen and (min-width: 1396px) {
-      width: 600px;
-      font-size: 40px;
-    }
+    width: clamp(15.625rem, 9.119rem + 32.53vw, 37.5rem);
   }
 
   &__text {
     color: $text-secondary;
-    font-size: 14px;
+    font-size: clamp(0.875rem, 0.801rem + 0.37vw, 1.125rem);
     font-weight: 500;
     line-height: 1.2;
     display: none;
-    width: 300px;
+    width: clamp(18.75rem, 15.033rem + 18.59vw, 31.25rem);
     text-align: end;
     margin-top: auto;
     margin-left: auto;
+
     @media screen and (min-width: 734px) {
       display: block;
-    }
-    @media screen and (min-width: 1396px) {
-      width: 500px;
-      font-size: 18px;
-    }
-  }
-
-  &__picture img {
-    width: 140px;
-    padding: 5px;
-    border-radius: 10px;
-    background: $secondary-accent;
-    @media screen and (min-width: 390px) {
-      width: 175px;
-    }
-    @media screen and (min-width: 734px) {
-      width: 220px;
-    }
-
-    @media screen and (min-width: 1396px) {
-      width: 432px;
     }
   }
 
   &__list {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    // @media screen and (min-width: 390px) {
-    //   gap: 10px;
-    // }
-    @media screen and (min-width: 734px) {
-      justify-content: space-between;
-      margin-top: 30px;
-    }
-    @media screen and (min-width: 1396px) {
-      margin-top: 50px;
-    }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: clamp(1.25rem, 0.692rem + 2.79vw, 3.125rem);
   }
 
   &__item {
@@ -111,80 +72,67 @@
     overflow: hidden;
     border-radius: 10px;
 
-    &:hover {
-      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    flex: 1 1 calc((100% - 20px) / 3);
+
+    @media screen and (max-width: 733px) {
+      flex: 1 1 calc((100% - 10px) / 2);
+    }
+    &:nth-child(3) {
+      @media screen and (max-width: 733px) {
+        display: none;
+      }
     }
 
     &:hover .describe__subtext {
-      transform: translateY(0px);
+      transform: translateY(0);
       opacity: 1;
     }
-    &:nth-child(1) {
-      margin-right: 10px;
-      @media screen and (min-width: 734px) {
-        margin-right: 0;
-      }
-    }
-
-    &:nth-child(3) {
-      .describe__picture {
-        @media screen and (max-width: 733px) {
-          display: none;
-        }
-        @media screen and (min-width: 734px) {
-          display: block;
-        }
-      }
-
-      .describe__subtitle {
-        display: none;
-        @media screen and (min-width: 734px) {
-          display: block;
-        }
-      }
-      .describe__subtext {
-        display: none;
-
-        @media screen and (min-width: 734px) {
-          display: block;
-        }
-      }
-    }
   }
+
+  &__picture img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    background: $secondary-accent;
+  }
+
   &__subtext {
     color: $sections-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; // текст внизу
     overflow: hidden;
-
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 1.2;
     transform: translateY(100%);
     position: absolute;
     bottom: 0;
+    left: 0;
     right: 0;
+    height: 100%; 
+    padding: clamp(10px, 3%, 20px); 
     border-radius: 10px;
     opacity: 0;
     z-index: 2;
-    padding: 160px 10px 10px 10px;
     background: linear-gradient(
       0deg,
-      rgba(185, 121, 10, 0.4) 65.38%,
+      rgba(185, 121, 10, 0.4) 65%,
       rgba(180, 160, 88, 0.25) 100%
     );
-    transition: transform 0.35s ease, opacity 0.35s ease;
+    transition:
+      transform 0.35s ease,
+      opacity 0.35s ease;
     will-change: transform, opacity;
-      @media screen and (min-width: 390px){
-    font-size: 14px;         
-  }
-    @media screen and (min-width: 734px){
-   font-size: 16px;
-   padding-top: 180px;
-  }
 
-    @media screen and (min-width: 1396px){
-font-size: 25px;
-padding: 700px 20px 20px 20px;
-  }
+    @media screen and (min-width: 390px) {
+      font-size: 15px;
+    }
+    @media screen and (min-width: 734px) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 1396px) {
+      font-size: 25px;
+    }
   }
 }

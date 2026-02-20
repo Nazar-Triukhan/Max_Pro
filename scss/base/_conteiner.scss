@@ -1,20 +1,20 @@
 .conteiner {
   width: 100%;             
-  max-width: 1396px;         
+  max-width: 1396px;      
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 clamp(0.313rem, 0.22rem + 0.46vw, 0.625rem);
     box-sizing: border-box; 
 
-  @media screen and (min-width: 390px){
-    width: 390px;           
-  }
+  // @media screen and (min-width: 390px){
+  //   width: 390px;           
+  // }
 
-  @media screen and (min-width: 734px){
-   width: 734px;
-  }
+  // @media screen and (min-width: 734px){
+  //  width: 734px;
+  // }
 
-  @media screen and (min-width: 1396px){
-    width: 1396px;
-    padding: 0 10px;
-  }
+  // @media screen and (min-width: 1396px){
+  //   width: 1396px;
+  //   padding: 0 10px;
+  // }
 }
