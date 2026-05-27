@@ -31,13 +31,14 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts with font-display: swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
     <!-- Normalize CSS -->
     <link
@@ -77,6 +78,7 @@
               src="./image/mobile/Logo.svg"
               alt="logo"
               data-aos="fade-up"
+              loading="lazy"
             />
           </a>
 
@@ -85,6 +87,7 @@
               class="nav__burger"
               src="./image/mobile/textalign-left.svg"
               alt="burger__menu"
+              loading="lazy"
             />
           </button>
 
@@ -333,6 +336,7 @@
                 class="services__video"
                 aria-label="Video showing stairs with background music, no speech"
                 data-aos="fade-up"
+                preload="none"
               >
                 <source
                   src="./image/universal/home-transformation.mp4"
@@ -349,6 +353,7 @@
                 class="services__video"
                 aria-label="Video showing a kitchen with background music, no speech"
                 data-aos="fade-up"
+                preload="none"
               >
                 <source
                   src="./image/universal/staircase-design.mp4"
@@ -365,6 +370,7 @@
                 class="services__video"
                 aria-label="Video showing a garage with background music, no speech"
                 data-aos="fade-up"
+                preload="none"
               >
                 <source
                   src="./image/universal/kitchen-remodel.mp4"
@@ -381,6 +387,7 @@
                 class="services__video"
                 aria-label="Video showing a kitchen renovation with background music, no speech"
                 data-aos="fade-up"
+                preload="none"
               >
                 <source
                   src="./image/universal/garage-renovation.mp4"
@@ -890,7 +897,6 @@
                 src="./image/mobile/Logo.svg"
                 alt="logo"
                 data-aos="fade-up"
-                loading="lazy"
               />
             </a>
 
@@ -920,13 +926,13 @@
               <li class="contact__element">
                 <h3 class="contact__title" data-aos="flip-up">Company</h3>
                 <div class="contact__links">
-                  <a href="#services" class="contact__link" data-aos="fade-up"
+                  <a href="#services" class="contact__link" 
                     >Our services</a
                   >
-                  <a href="#describe" class="contact__link" data-aos="fade-up"
+                  <a href="#describe" class="contact__link" 
                     >Our works</a
                   >
-                  <a href="#renovate" class="contact__link" data-aos="fade-up"
+                  <a href="#renovate" class="contact__link" 
                     >About Us</a
                   >
                 </div>
@@ -938,19 +944,19 @@
                   <a
                     href="./privacy-policy.html"
                     class="contact__link"
-                    data-aos="fade-up"
+                  
                     >Privacy Policy</a
                   >
                   <a
                     href="./privacy-rights.html"
                     class="contact__link"
-                    data-aos="fade-up"
+               
                     >Your Privacy Rights</a
                   >
                   <a
                     href="./childrens-privacy.html"
                     class="contact__link"
-                    data-aos="fade-up"
+                   
                     >Children’s Privacy</a
                   >
                 </div>
@@ -968,7 +974,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="contact__unit" data-aos="flip-up">
+              <li class="contact__unit" >
                 <a
                   href="https://www.instagram.com/maxpro_remodeling_?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
                   target="_blank"
@@ -978,21 +984,21 @@
                   </svg>
                 </a>
               </li>
-              <li class="contact__unit" data-aos="flip-up">
+              <li class="contact__unit" >
                 <a href="" target="_blank">
                   <svg class="contact__icon">
                     <use href="./image/symbol-defs.svg#icon-you-beck"></use>
                   </svg>
                 </a>
               </li>
-              <li class="contact__unit" data-aos="flip-up">
+              <li class="contact__unit" >
                 <a href="" target="_blank">
                   <svg class="contact__icon">
                     <use href="./image/symbol-defs.svg#icon-tel-back"></use>
                   </svg>
                 </a>
               </li>
-              <li class="contact__unit" data-aos="flip-up">
+              <li class="contact__unit" >
                 <a
                   href="https://www.facebook.com/profile.php?id=61578129131532&mibextid=wwXIfr"
                   target="_blank"
@@ -1018,13 +1024,17 @@
       </section>
     </footer>
 
-    <script src="./js/mobile.js"></script>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/scroll-x.js"></script>
-    <script src="./js/video.js"></script>
-    <script src="./aos/aos.js"></script>
-    <script>
-      AOS.init();
+    <script src="./js/mobile.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/scroll-x.js" defer></script>
+    <script src="./js/video.js" defer></script>
+    <script src="./aos/aos.js" defer></script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.AOS) {
+          AOS.init();
+        }
+      });
     </script>
   </body>
 </html>
