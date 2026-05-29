@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "start": "node server.js"
-},
+  "scripts": {
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nazar-Triukhan/Max_Pro.git"
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Nazar-Triukhan/Max_Pro#readme",
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.10"
   }
 }
