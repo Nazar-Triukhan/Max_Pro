@@ -1,0 +1,337 @@
+.form {
+  padding-top: clamp(3.125rem, 2.753rem + 1.86vw, 4.375rem);
+  padding-bottom: clamp(3.125rem, 2.753rem + 1.86vw, 4.375rem);
+  background: $backgraund;
+
+  &__box {
+    position: relative;
+  }
+
+  &__title {
+    color: $text-main;
+    text-align: center;
+    font-size: clamp(1rem, 0.554rem + 2.23vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: clamp(0.625rem, 0.476rem + 0.74vw, 1.125rem);
+  }
+
+  &__subtitle {
+    color: $text-secondary;
+    display: block;
+    text-align: center;
+    font-size: clamp(0.625rem, 0.476rem + 0.74vw, 1.125rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: clamp(1.875rem, 1.503rem + 1.86vw, 3.125rem);
+  }
+
+  &__rules {
+    max-width: 860px;
+    margin: 0 auto clamp(1.25rem, 1rem + 0.75vw, 1.75rem);
+    background: rgba(242, 125, 8, 0.08);
+    border: 1px solid rgba(245, 166, 35, 0.22);
+    border-radius: 16px;
+    padding: clamp(1rem, 0.9rem + 0.25vw, 1.5rem);
+    color: $text-secondary;
+    font-size: clamp(0.85rem, 0.8rem + 0.15vw, 1rem);
+    line-height: 1.7;
+  }
+
+  &__rules-list {
+    margin: 0.75rem 0 0;
+    padding-left: 1.35rem;
+    list-style: disc;
+  }
+
+  &__rules-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  &__container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: $sections-background;
+    border-radius: 20px;
+    padding: clamp(1rem, 0.75rem + 1.25vw, 2rem);
+
+    @media screen and (min-width: 734px) {
+      max-width: 100%;
+      padding: clamp(1.5rem, 1rem + 1.25vw, 2.25rem);
+    }
+
+    @media screen and (min-width: 1396px) {
+      max-width: 100%;
+      padding: clamp(1.75rem, 1.25rem + 1.25vw, 2.5rem);
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.4rem, 0.35rem + 0.28vw, 0.6rem);
+    margin-bottom: clamp(0.75rem, 0.6rem + 0.56vw, 1rem);
+
+    @media screen and (min-width: 734px) {
+      &--double {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: clamp(0.875rem, 0.753rem + 0.56vw, 1.25rem);
+      }
+    }
+
+    @media screen and (min-width: 1396px) {
+      &--double {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: clamp(1rem, 0.878rem + 0.56vw, 1.25rem);
+      }
+    }
+  }
+
+  &__label {
+    color: $text-main;
+    font-size: clamp(0.75rem, 0.634rem + 0.56vw, 1rem);
+    font-weight: 600;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: clamp(0.35rem, 0.25rem + 0.28vw, 0.5rem);
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: clamp(0.6rem, 0.5rem + 0.42vw, 0.875rem);
+    border: 2px solid $icos;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: clamp(0.75rem, 0.634rem + 0.56vw, 1rem);
+    color: $text-main;
+    background: $sections-background;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 300ms;
+    transition-property: border-color, box-shadow;
+
+    &::placeholder {
+      color: $icos;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $secondary-accent;
+      box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.1);
+    }
+
+    &:hover {
+      border-color: $buttons-pointing;
+    }
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $backgraund;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $secondary-accent;
+      border-radius: 10px;
+
+      &:hover {
+        background: $buttons-pointing;
+      }
+    }
+  }
+
+  &__file-input {
+    display: none;
+  }
+
+  &__file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: clamp(0.75rem, 0.6rem + 0.56vw, 1.25rem);
+    border: 2px dashed $secondary-accent;
+    border-radius: 10px;
+    background: rgba(245, 166, 35, 0.05);
+    cursor: pointer;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 300ms;
+    transition-property: border-color, background-color;
+
+    &:hover {
+      border-color: $buttons-pointing;
+      background: rgba(242, 125, 8, 0.1);
+    }
+
+    &.has-file {
+      border-color: $buttons-pointing;
+      background: rgba(242, 125, 8, 0.05);
+    }
+  }
+
+  &__file-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  &__file-text {
+    color: $text-secondary;
+    font-size: clamp(0.75rem, 0.634rem + 0.56vw, 0.875rem);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__file-name {
+    color: $secondary-accent;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: clamp(0.625rem, 0.5rem + 0.56vw, 0.75rem);
+  }
+
+  &__checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: clamp(0.75rem, 0.6rem + 0.56vw, 1rem);
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $icos;
+    border-radius: 5px;
+    cursor: pointer;
+    appearance: none;
+    background: $sections-background;
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 300ms;
+    transition-property: border-color, background-color;
+
+    &:checked {
+      background: $secondary-accent;
+      border-color: $secondary-accent;
+      position: relative;
+    }
+
+    &:checked::after {
+      content: '✓';
+      position: absolute;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover {
+      border-color: $buttons-pointing;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.1);
+    }
+  }
+
+  &__checkbox-label {
+    color: $text-secondary;
+    font-size: clamp(0.75rem, 0.634rem + 0.56vw, 0.875rem);
+    font-weight: 500;
+    line-height: 1.4;
+    cursor: pointer;
+
+    a {
+      color: $secondary-accent;
+      text-decoration: underline;
+      transition: color 300ms ease;
+
+      &:hover {
+        color: $buttons-pointing;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: clamp(0.75rem, 0.634rem + 0.42vw, 1rem);
+    background: $buttons-active;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: clamp(0.75rem, 0.634rem + 0.42vw, 0.875rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 300ms;
+    transition-property: background-color, transform;
+
+    &:hover {
+      background: $secondary-accent;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    &:disabled {
+      background: $icos;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+
+  &__success-message {
+    display: none;
+    text-align: center;
+    padding: clamp(1rem, 0.75rem + 0.93vw, 1.5rem);
+    background: rgba(242, 125, 8, 0.1);
+    border: 2px solid $secondary-accent;
+    border-radius: 10px;
+    color: $buttons-active;
+    font-weight: 600;
+    margin-top: 10px;
+
+    &.show {
+      display: block;
+      animation: slideIn 0.3s ease;
+    }
+  }
+
+  &__error-message {
+    display: none;
+    color: #d32f2f;
+    font-size: clamp(0.625rem, 0.5rem + 0.56vw, 0.75rem);
+    font-weight: 500;
+    margin-top: 5px;
+
+    &.show {
+      display: block;
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

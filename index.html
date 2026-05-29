@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSP з дозволеними зовнішніми стилями -->
-<meta
+<!-- <meta
   http-equiv="Content-Security-Policy"
   content="
     default-src 'self';
@@ -13,9 +13,9 @@
     script-src 'self' 'unsafe-inline';
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
     font-src 'self' https://fonts.gstatic.com;
-    connect-src 'self' https://cdnjs.cloudflare.com;
+    connect-src 'self' http://localhost:3001 https://cdnjs.cloudflare.com;
   "
-/>
+/> -->
 
     <title>MaxPro | Home Renovation & Interior Design</title>
     <meta
@@ -26,10 +26,9 @@
     <link rel="stylesheet" href="./aos/aos.css" />
 
     <!-- favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./image/mobile/Logo.svg" />
+    <link rel="apple-touch-icon" href="./image/mobile/Logo.svg" />
+    <link rel="shortcut icon" href="./image/mobile/Logo.svg" />
 
     <!-- Google Fonts with font-display: swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -148,8 +147,7 @@
           </p>
           <a
             class="hero__btn"
-            href="https://www.instagram.com/maxpro_remodeling_/"
-            target="_blank"
+            href="#renovation-form"
             data-aos="fade-up"
             >Leave a request</a
           >
@@ -227,7 +225,7 @@
                   </p>
                   <div class="services__wraper">
                     <a
-                      href="https://www.instagram.com/maxpro_remodeling_/"
+                      href="#renovation-form"
                       target="_blank"
                       class="services__button"
                       data-aos="flip-up"
@@ -295,7 +293,7 @@
                   </p>
                   <div class="services__wraper">
                     <a
-                      href="https://www.instagram.com/maxpro_remodeling_/"
+                      href="#renovation-form"
                       target="_blank"
                       class="services__button"
                       data-aos="flip-up"
@@ -542,9 +540,8 @@
             </li>
             <li class="networks__item" data-aos="flip-up">
               <a
-                href="https://www.instagram.com/maxpro_remodeling_?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
+                href="#renovation-form"
                 class="networks__link"
-                target="_blank"
               >
                 <svg class="networks__svg">
                   <use href="./image/symbol-defs.svg#icon-instargam"></use>
@@ -886,6 +883,127 @@
         </div>
       </div>
     </section>
+
+    <section class="form" id="renovation-form">
+      <div class="conteiner form__box">
+        <h2 class="form__title" data-aos="fade-up">Ready for Your Renovation?</h2>
+        <p class="form__subtitle" data-aos="fade-up">Tell us about your project and we'll get back to you with a custom plan</p>
+        <div class="form__rules" data-aos="fade-up">
+          <p>We collect your project details only to provide a personalized renovation proposal and to contact you about your request.</p>
+          <ul class="form__rules-list">
+            <li>Your name, email, phone number and project information will be used to respond to your request.</li>
+            <li>We will contact you by email or phone about your estimate, schedule and project details.</li>
+            <li>We do not sell your personal information; we only share it when necessary to deliver services or comply with the law.</li>
+          </ul>
+        </div>
+        <div class="form__container" data-aos="fade-up">
+          <form class="form__element" id="renovationForm">
+            <div class="form__group form__group--double">
+              <div>
+                <label class="form__label" for="name">Your Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form__input" 
+                  placeholder="John Doe"
+                  required
+                />
+                <span class="form__error-message" data-error="name"></span>
+              </div>
+              <div>
+                <label class="form__label" for="email">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form__input" 
+                  placeholder="john@example.com"
+                  required
+                />
+                <span class="form__error-message" data-error="email"></span>
+              </div>
+              <div>
+                <label class="form__label" for="phone">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  class="form__input" 
+                  placeholder="+1 (951) 807-0058"
+                />
+                <span class="form__error-message" data-error="phone"></span>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="projectType">Project Type</label>
+              <select id="projectType" name="projectType" class="form__input" required>
+                <option value="">Select a project type</option>
+                <option value="full-renovation">Full Home Renovation</option>
+                <option value="kitchen">Kitchen Remodeling</option>
+                <option value="bathroom">Bathroom Renovation</option>
+                <option value="flooring">Flooring</option>
+                <option value="painting">Painting & Finishing</option>
+                <option value="custom">Custom Project</option>
+              </select>
+              <span class="form__error-message" data-error="projectType"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="description">Project Description</label>
+              <textarea 
+                id="description" 
+                name="description" 
+                class="form__textarea" 
+                placeholder="Tell us about your project, what you want to achieve, and any specific details or preferences..."
+                required
+              ></textarea>
+              <span class="form__error-message" data-error="description"></span>
+            </div>
+
+            <!-- <div class="form__group">
+              <label class="form__label">Upload Project Photos (Optional)</label>
+              <input 
+                type="file" 
+                id="fileInput" 
+                name="files" 
+                class="form__file-input" 
+                accept="image/*"
+                multiple
+              />
+              <label for="fileInput" class="form__file-label">
+                <svg class="form__file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="form__file-text">Drag files here or click to upload</span>
+              </label>
+              <div class="form__file-name" id="fileName"></div>
+            </div> -->
+
+            <div class="form__checkbox-group">
+              <input 
+                type="checkbox" 
+                id="agreement" 
+                name="agreement" 
+                class="form__checkbox"
+                required
+              />
+              <label for="agreement" class="form__checkbox-label">
+                I agree to the <a href="./privacy-policy.html" target="_blank">Privacy Policy</a> and consent to be contacted about my project
+              </label>
+            </div>
+
+            <button type="submit" class="form__button" data-aos="fade-up">Get Your Free Quote</button>
+            <div class="form__success-message" id="successMessage">
+              Thank you! We'll review your project and contact you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 </main>
     <footer class="footer" id="footer">
       <section class="contact">
@@ -976,8 +1094,7 @@
               </li>
               <li class="contact__unit" >
                 <a
-                  href="https://www.instagram.com/maxpro_remodeling_?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr"
-                  target="_blank"
+                  href="#renovation-form"
                 >
                   <svg class="contact__icon">
                     <use href="./image/symbol-defs.svg#icon-inst-beck"></use>
@@ -1028,6 +1145,8 @@
     <script src="./js/scroll.js" defer></script>
     <script src="./js/scroll-x.js" defer></script>
     <script src="./js/video.js" defer></script>
+    <script src="./js/backend.js" defer></script>
+    <script src="./js/form.js" defer></script>
     <script src="./aos/aos.js" defer></script>
     <script defer>
       document.addEventListener('DOMContentLoaded', function() {
