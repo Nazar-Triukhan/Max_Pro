@@ -63,7 +63,7 @@ app.post("/api/renovation-request", async (req, res) => {
     console.log("Дані з форми:", data);
 
     await sendToTelegram(data);
-    await sendToGmail(data);
+    // await sendToGmail(data);
 
     res.status(200).json({
       success: true,
