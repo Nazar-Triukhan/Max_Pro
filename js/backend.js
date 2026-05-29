@@ -1,7 +1,7 @@
 // Backend submission helper for renovation request form
 
 const backendConfig = {
-endpoint: 'http://localhost:3001/api/renovation-request'
+endpoint: 'https://max-pro-bzhq.onrender.com/api/renovation-request'
 };
 
 /**
